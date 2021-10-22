@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/search-css.css" />
     <link rel="stylesheet" href="../css/slides.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="../css/modal.css" />
+
     <!-- Remember to include jQuery :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
@@ -21,6 +21,7 @@
     <title>GG</title>
   </head>
   <body>
+    <div id="top"></div>
     <!-- Header -->
     <header>
       <div class="header-logo">
@@ -31,8 +32,8 @@
       </div>
       <div>
         <form
-          id="searchform"
-          name="searchform"
+          id="search-form"
+          name="search-form"
           action="Search.php"
           method="post"
         >
@@ -58,31 +59,10 @@
       <a href="index.html">TRANG CHỦ</a>
       <!-- <a href="#footer">THÔNG TIN</a> -->
       <a href="Cart.php">GIỎ HÀNG</a>
-      <a href="#login-modal" rel="modal:open">ĐĂNG NHẬP</a>
-      <a href="#signup-modal" rel="modal:open">ĐĂNG KÝ</a>
+      <a href="login-modal.html" rel="modal:open">ĐĂNG NHẬP</a>
+      <a href="signup-modal.html" rel="modal:open">ĐĂNG KÝ</a>
     </nav>
-    <!-- Login Modal -->
-    <div id="login-modal" class="login-modal">
-      <p>
-        Dolore tempor aute fugiat in do elit non amet deserunt. Veniam deserunt
-        elit esse fugiat mollit aliqua officia excepteur commodo ad culpa labore
-        dolore esse. Et nulla pariatur in aliqua non id culpa culpa amet culpa
-        commodo reprehenderit officia nostrud. Aliqua tempor consectetur culpa
-        ex proident occaecat sunt proident in excepteur aliqua esse elit.
-      </p>
-      <a href="#" rel="modal:close">Close</a>
-    </div>
-    <!-- Signup Modal -->
-    <div id="signup-modal" class="signup-modal">
-      <p>
-        Dolore tempor aute fugiat in do elit non amet deserunt. Veniam deserunt
-        elit esse fugiat mollit aliqua officia excepteur commodo ad culpa labore
-        dolore esse. Et nulla pariatur in aliqua non id culpa culpa amet culpa
-        commodo reprehenderit officia nostrud. Aliqua tempor consectetur culpa
-        ex proident occaecat sunt proident in excepteur aliqua esse elit.
-      </p>
-      <a href="#" rel="modal:close">Close</a>
-    </div>
+
     <!-- Slideshow -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
@@ -347,5 +327,9 @@
         </div>
       </div>
     </footer>
+    <div id="scroll-button" class="to-top-button">
+      <a href="#top"><img src="../images/up-arrow.png" class="up-icon"/></a>
+    </div>
+    <script src="../js/scroll-button.js"></script>
   </body>
 </html>

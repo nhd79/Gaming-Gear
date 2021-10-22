@@ -2,6 +2,9 @@
 :root {
   --mainColor: #ec1933;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -18,6 +21,9 @@ a {
 }
 /* Header */
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-auto-rows: 71px;
@@ -66,6 +72,7 @@ header > div > .text {
 }
 /* Navigation Bar */
 nav {
+  padding-top: 71px;
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-auto-rows: 45px;
@@ -99,6 +106,7 @@ nav > a:hover {
 }
 /* News */
 .news-grid {
+  margin-top: 5px;
   display: grid;
   grid-template-areas:
     "news1 news1 news2 news2 news2 news2"
@@ -419,7 +427,20 @@ footer > div:last-child {
 .footer-news > div:last-child {
   color: var(--mainColor);
 }
-.login-modal,
-.signup-modal {
+.to-top-button {
   display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.up-icon {
+  height: 40px;
+  width: 40px;
+  border: 2px solid gray;
+  border-radius: 100vh;
+  padding: 10px;
+  background-color: gray;
+  opacity: 0.3;
+  cursor: pointer;
 }
