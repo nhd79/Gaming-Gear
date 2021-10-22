@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@400;600&display=swap");
+:root {
+  --mainColor: #ec1933;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: visible !important;
+}
+a {
+  text-decoration: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-auto-rows: 71px;
+}
+header > div {
+  font-size: 21px;
+  color: white;
+  background-color: #151719;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > div > .text {
+  color: white;
+  padding-left: 10px;
+}
+.cart {
+  color: white;
+  background-color: crimson;
+  border-radius: 100vh;
+  width: 65px;
+  height: 45px;
+}
+/* .cart:hover {
+  background-color: white;
+} */
+.cart-icon {
+  filter: invert(78%) sepia(100%) saturate(0%) hue-rotate(348deg)
+    brightness(112%) contrast(101%);
+  height: 35px;
+}
+/* .cart-icon:hover {
+  filter: invert(13%) sepia(74%) saturate(6637%) hue-rotate(343deg)
+    brightness(90%) contrast(90%);
+} */
+@media screen and (max-width: 840px) {
+  .header-logo {
+    grid-column: span 2 / auto;
+  }
+}
+@media screen and (max-width: 559px) {
+  .header-logo {
+    grid-column: 1 / 2;
+  }
+}
+/* Navigation Bar */
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-rows: 45px;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+@media screen and (max-width: 559px) {
+  nav {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+nav > a {
+  color: #343a40;
+  border-right: 1px solid lightgray;
+  font-size: 21px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > a:hover {
+  color: white;
+  background-color: var(--mainColor);
+  outline: 2px solid white;
+  outline-offset: -0.3em;
+}
+/* News */
+.news-grid {
+  display: grid;
+  grid-template-areas:
+    "news1 news1 news2 news2 news2 news2"
+    "news1 news1 news3 news3 news4 news4"
+    "news1 news1 news5 news6 news4 news4";
+  grid-template-columns: repeat(6, minmax(10vw, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 200px));
+  gap: 10px;
+}
+@media screen and (max-width: 559px) {
+  .news-grid {
+    grid-template-areas:
+      "news1"
+      "news2"
+      "news3"
+      "news4"
+      "news5"
+      "news6";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 100px);
+  }
+  .news-4 {
+    grid-area: news4;
+
+    background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash146x100.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+.news-grid > div {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-1 {
+  grid-area: news1;
+}
+.news-2 {
+  grid-area: news2;
+
+  background-image: url(../images/cyberpunk-900-506.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.news-3 {
+  grid-area: news3;
+}
+.news-4 {
+  grid-area: news4;
+
+  background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.news-5 {
+  grid-area: news5;
+}
+.news-6 {
+  grid-area: news6;
+}
+/* Category */
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 65px;
+
+  color: white;
+  background-color: black;
+}
+@media screen and (max-width: 900px) {
+  .category-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  .product-button {
+    grid-column: 1/3;
+  }
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-button {
+    grid-column: 1/2;
+  }
+}
+.category-grid > div:not(.category) {
+  /*Select all divs inside 'category-grid' but not div with class 'category'*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-text {
+  font-size: 21px;
+}
+@media screen and (min-width: 900px) {
+  .category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.category > a {
+  margin-right: 7px;
+  color: white;
+  padding: 8px;
+  border-radius: 100vh;
+  border: 2px solid white;
+}
+.category > a:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s ease;
+}
+.product-page-button {
+  font-size: 20px;
+}
+.product-page-button > a {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 100vh;
+  border: 2px solid var(--mainColor);
+}
+.product-page-button > a:hover {
+  background-color: var(--mainColor);
+  transition: 0.6s ease;
+}
+/* Product */
+.product-grid {
+  padding: 25px 70px 0px 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-auto-rows: 410px;
+  gap: 25px;
+
+  background-color: #151719;
+}
+.item {
+  /* border: 3px solid var(--mainColor); */
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.item > div:not(.detail-button-price-grid) {
+  padding: 20px;
+}
+.item-category {
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 100vh;
+  border: 1px solid gray;
+  background-color: gray;
+}
+.item-img {
+  max-width: 200px;
+  max-height: 150px;
+}
+.item-name {
+  font-weight: bold;
+}
+.detail-button-price-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px;
+  align-content: end;
+}
+.detail-button {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.detail-button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.6s ease;
+}
+.price {
+  color: white;
+  background-color: var(--mainColor);
+}
+.browse-all {
+  background-color: #151719;
+  text-align: center;
+  font-size: 22px;
+  height: 100px;
+  padding-top: 40px;
+}
+.browse-all > a {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 100vh;
+  border: 1px solid var(--mainColor);
+  padding: 10px;
+  cursor: pointer;
+}
+.browse-all > a:hover {
+  background-image: linear-gradient(
+    var(--mainColor),
+    var(--mainColor),
+    #f04257
+  );
+}
+/* Footer */
+footer > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 2fr)) 4fr;
+  grid-template-rows: 50px;
+
+  background-color: black;
+  color: white;
+}
+footer > div:first-child > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 2fr)) 4fr;
+  color: gray;
+  background-color: #151719;
+}
+.footer-products,
+.footer-brands,
+.footer-store {
+  display: flex;
+  justify-content: center;
+}
+.footer-products li,
+.footer-brands li,
+.footer-store li {
+  color: var(--mainColor);
+  padding-bottom: 10px;
+}
+.footer-products a,
+.footer-brands a,
+.footer-store a {
+  color: gray;
+}
+.footer-products a:hover,
+.footer-brands a:hover,
+.footer-store a:hover {
+  color: white;
+}
+/* .footer-brands ul > li:first-child {
+  list-style-image: url(../images/logo-akko.jpg);
+} */
+.footer-store ul {
+  padding-left: 9vw;
+}
+.footer-news {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr);
+  grid-template-rows: 50px 90px 50px 50px 50px;
+  padding-left: 8vw;
+}
+.footer-news div {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-news input {
+  padding-left: 10px;
+  border: none;
+  border-radius: 100vh;
+  height: 27px;
+}
+.footer-news button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 100vh;
+  border: 1px solid var(--mainColor);
+  padding: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.footer-news button:hover {
+  background-image: linear-gradient(
+    var(--mainColor),
+    var(--mainColor),
+    #f04257
+  );
+}
+.footer-news > div:nth-child(3),
+.footer-news > div:nth-child(4),
+.footer-news > div:nth-child(5) {
+  color: white;
+}
+.phone-icon,
+.email-icon {
+  filter: invert(20%) sepia(58%) saturate(5182%) hue-rotate(342deg)
+    brightness(92%) contrast(101%);
+  height: 30px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 875px) {
+  .footer-news button {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer-news {
+    padding-left: 0px;
+  }
+}
+.footer-news > div:last-child {
+  color: var(--mainColor);
+}
+.login-modal,
+.signup-modal {
+  display: none;
+}
