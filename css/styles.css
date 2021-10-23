@@ -77,14 +77,21 @@ nav {
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-auto-rows: 45px;
 }
+@media screen and (max-width: 840px) {
+  nav {
+    padding-top: 142px;
+  }
+}
 @media screen and (max-width: 800px) {
   nav {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
+    padding-top: 142px;
   }
 }
 @media screen and (max-width: 559px) {
   nav {
     grid-template-columns: minmax(200px, 1fr);
+    padding-top: 213px;
   }
 }
 nav > a {

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/search-css.css" />
+    <link rel="stylesheet" href="../css/slides.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/product-page.css" />
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <title>GG</title>
+  </head>
+
+  <body>
+    <div id="top"></div>
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        <a href="index.html"
+          ><img src="../images/logo4.png" alt="Website's Logo" height="45"
+        /></a>
+        <a href="index.html" class="text">Gaming Gear</a>
+      </div>
+      <div>
+        <form
+          id="search-form"
+          name="search-form"
+          action="Search.php"
+          method="post"
+        >
+          <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <div class="search"></div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <a href="Cart.php" class="cart center">
+          <img src="../images/icon-shopping-cart-2.png" class="cart-icon" />
+        </a>
+        <div style="padding-left: 20px; font-size: 18px">
+          <div style="color: crimson">1 Sản phẩm</div>
+          <div style="color: white; font-size: larger">5.000 đ</div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="Cart.php">GIỎ HÀNG</a>
+      <a href="login-modal.html" rel="modal:open">ĐĂNG NHẬP</a>
+      <a href="signup-modal.html" rel="modal:open">ĐĂNG KÝ</a>
+    </nav>
+
+    <div class="product-page-grid">
+      <!-- Category -->
+      <div class="product-page-category-grid">
+        <div class="category-text center">Danh mục sản phẩm</div>
+        <div class="center">
+          <a href="product.php">Chuột</a>
+          <a href="product.php">Bàn phím</a>
+          <a href="product.php">Tai nghe</a>
+          <a href="product.php">Ghế</a>
+          <a href="product.php">Loa</a>
+          <a href="product.php">Lót chuột</a>
+        </div>
+      </div>
+      <!-- Product -->
+      <div class="product-page-product-grid">
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Chuột</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/Logitech G604 Hero Lightspeed Wireless.jpg"
+              alt="chuot"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Logitech G604 Hero Lightspeed Wireless</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">430,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <a href="product.php" class="item-category">Bàn phím</a>
+          </div>
+          <div class="center">
+            <img
+              src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+              alt="banphim"
+              class="item-img"
+            />
+          </div>
+          <div class="item-name">Leopold FC660MPD Sweden White Case</div>
+          <div class="detail-button-price-grid">
+            <a href="#" class="detail-button center">Chi tiết</a>
+            <div class="price center">2,750,000 VND</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- <div class="browse-all"></div> -->
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <span>Sản phẩm</span>
+        <span>Thương hiệu</span>
+        <span>Cửa hàng</span>
+        <span>Tin tức</span>
+      </div>
+      <div>
+        <div class="footer-products">
+          <ul>
+            <li><a href="#">Chuột</a></li>
+            <li><a href="#">Bàn phím</a></li>
+            <li><a href="#">Tai nghe</a></li>
+            <li><a href="#">Ghế</a></li>
+            <li><a href="#">Loa</a></li>
+            <li><a href="#">Lót chuột</a></li>
+          </ul>
+        </div>
+        <div class="footer-brands">
+          <ul>
+            <li><a href="#">AKKO</a></li>
+            <li><a href="#">AKRacing</a></li>
+            <li><a href="#">Anda</a></li>
+            <li><a href="#">Asus</a></li>
+            <li><a href="#">Corsair</a></li>
+            <li><a href="#">Cougar</a></li>
+            <li><a href="#">DareU</a></li>
+            <li><a href="#">DXRACER</a></li>
+            <li><a href="#">HyperX</a></li>
+            <li><a href="#">Leopold</a></li>
+            <li><a href="#">Logitech</a></li>
+            <li><a href="#">Rapoo</a></li>
+            <li><a href="#">Razer</a></li>
+            <li><a href="#">SteelSeries</a></li>
+          </ul>
+        </div>
+        <div class="footer-store">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Thông tin liên lạc</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-news">
+          <div>Đăng ký để nhận thông báo qua email</div>
+          <div>
+            <form method="post" action="Subscribe.php">
+              <input type="text" name="" id="" size="20" />
+              <button>Đăng ký</button>
+            </form>
+          </div>
+          <div>Liên lạc với chúng tôi</div>
+          <div>
+            <img src="../images/icon-phone.png" class="phone-icon" />+84 703 802
+            199
+          </div>
+          <div>
+            <img
+              src="../images/icon-email.png"
+              class="email-icon"
+            />hoangduy791999@gmail.com
+          </div>
+          <div>© 2021. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-button" class="to-top-button">
+      <a href="#top"><img src="../images/up-arrow.png" class="up-icon"/></a>
+    </div>
+    <script src="../js/scroll-button.js"></script>
+  </body>
+</html>
