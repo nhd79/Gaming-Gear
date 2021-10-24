@@ -460,3 +460,9 @@ footer > div:last-child {
   opacity: 0.3;
   cursor: pointer;
 }
+.search-result-text {
+  color: white;
+  background-color: #151719;
+  padding: 20px 10px 10px 10px;
+  font-size: 35px;
+}
