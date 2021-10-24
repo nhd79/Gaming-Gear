@@ -13,7 +13,7 @@
   grid-template-rows: 1fr repeat(auto-fit, 1fr);
 }
 .product div:not(:first-child) {
-  padding: 0px 0px 20px 50px;
+  padding-bottom: 20px;
 }
 .product-img {
   max-width: 60%;
@@ -25,4 +25,15 @@
 .product-price {
   color: red;
   font-size: 22px;
+}
+.add-to-cart-button {
+  color: white;
+  background-color: var(--mainColor);
+  border: none;
+  border-radius: 100vh;
+  padding: 10px;
+}
+.product div {
+  display: flex;
+  justify-content: center;
 }

@@ -42,24 +42,29 @@ header > div > .text {
   padding-left: 10px;
 }
 .cart {
-  color: white;
   background-color: crimson;
   border-radius: 100vh;
   width: 65px;
   height: 45px;
 }
-/* .cart:hover {
-  background-color: white;
-} */
 .cart-icon {
   filter: invert(78%) sepia(100%) saturate(0%) hue-rotate(348deg)
     brightness(112%) contrast(101%);
   height: 35px;
 }
-/* .cart-icon:hover {
-  filter: invert(13%) sepia(74%) saturate(6637%) hue-rotate(343deg)
-    brightness(90%) contrast(90%);
-} */
+.cart-plus {
+  background-color: crimson;
+  border-radius: 100vh;
+  width: 55px;
+  height: 35px;
+  position: relative;
+  left: 5vw;
+}
+.cart-plus-icon {
+  filter: invert(78%) sepia(100%) saturate(0%) hue-rotate(348deg)
+    brightness(112%) contrast(101%);
+  height: 25px;
+}
 @media screen and (max-width: 840px) {
   .header-logo {
     grid-column: span 2 / auto;
@@ -270,12 +275,16 @@ nav > a:hover {
 .item > div:not(.detail-button-price-grid) {
   padding: 20px;
 }
+.item-category-cart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 .item-category {
   color: white;
-  padding: 5px;
+  padding: 7px;
   border: none;
   border-radius: 100vh;
-  border: 1px solid gray;
   background-color: gray;
 }
 .item-img {
