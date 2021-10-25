@@ -6,7 +6,6 @@
   background: none;
   width: 0.5em;
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--mainColor);
   border-radius: 100vh;
