@@ -1,0 +1,10 @@
+.checkout-page-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.order-summary {
+  display: grid;
+}
+.checkout-infomation {
+  display: grid;
+}

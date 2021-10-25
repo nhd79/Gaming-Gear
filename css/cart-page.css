@@ -80,8 +80,9 @@
   border-radius: 5px;
   padding: 10px;
 }
-/* .total-checkout-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-} */
+.checkout-button {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--mainColor);
+  cursor: pointer;
+  font-size: 16px;
+}
