@@ -40,7 +40,7 @@
   grid-column: 1 / span 3;
   color: var(--mainColor);
 }
-.checkout-infomation {
+.checkout-information {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -48,11 +48,11 @@
   padding-right: 17vw;
   row-gap: 15px;
 }
-.checkout-infomation > .text {
+.checkout-information > .text {
   font-size: 30px;
 }
-.checkout-infomation input,
-.checkout-infomation select {
+.checkout-information input,
+.checkout-information select {
   border: 1px solid gray;
   border-radius: 10px;
   height: 40px;
@@ -61,8 +61,8 @@
   font-size: 15px;
   outline: none;
 }
-.checkout-infomation input:focus,
-.checkout-infomation select:focus {
+.checkout-information input:focus,
+.checkout-information select:focus {
   border: 2px solid var(--mainColor);
 }
 .order-button {
@@ -75,7 +75,7 @@
   cursor: pointer;
   font-size: 15px;
 }
-.checkout-infomation > div:last-child {
+.checkout-information > div:last-child {
   display: flex;
   justify-content: flex-end;
 }
@@ -83,16 +83,16 @@
   .checkout-page-grid {
     grid-template-columns: 1fr;
   }
-  .checkout-infomation {
+  .checkout-information {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  .checkout-infomation div {
+  .checkout-information div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .checkout-infomation > div:last-child {
+  .checkout-information > div:last-child {
     justify-content: center;
   }
 }
