@@ -9,12 +9,14 @@
     <div>
         <div class="footer-products">
             <ul>
-                <li><a href="product.php?product_id=2">Chuột</a></li>
-                <li><a href="product.php?product_id=1">Bàn phím</a></li>
-                <li><a href="product.php?product_id=3">Tai nghe</a></li>
-                <li><a href="product.php?product_id=4">Ghế</a></li>
-                <li><a href="product.php?product_id=5">Loa</a></li>
-                <li><a href="product.php?product_id=6">Lót chuột</a></li>
+                <?php
+                include_once("../model/db.php");
+                $sql = 'select * from category';
+                $result = readDatabase($sql);
+                foreach ($result as $category) {
+                    echo '<li><a href="product.php?product_id=' . $category[0] . '">' . $category[1] . '</a></li>';
+                }
+                ?>
             </ul>
         </div>
         <div class="footer-brands">

@@ -13,7 +13,7 @@ function readDatabase($sql)
     );
     try {
         $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $username, $password, $options);
-        echo "Connected successfully";
+        // echo "Connected successfully";
         $result = $connection->query($sql);
         return $result;
         $connection = null;
@@ -21,7 +21,7 @@ function readDatabase($sql)
         echo "Connection failed: " . $e->getMessage();
     }
 }
-// $result = read('select * from category where 1');
+// $result = readDatabase('select * from category where 1');
 // foreach ($result as $danhmuc) {
 //     echo $danhmuc[0];
 //     echo $danhmuc[1];
