@@ -21,20 +21,14 @@
         </div>
         <div class="footer-brands">
             <ul>
-                <li><a href="#">AKKO</a></li>
-                <li><a href="#">AKRacing</a></li>
-                <li><a href="#">Anda</a></li>
-                <li><a href="#">Asus</a></li>
-                <li><a href="#">Corsair</a></li>
-                <li><a href="#">Cougar</a></li>
-                <li><a href="#">DareU</a></li>
-                <li><a href="#">DXRACER</a></li>
-                <li><a href="#">HyperX</a></li>
-                <li><a href="#">Leopold</a></li>
-                <li><a href="#">Logitech</a></li>
-                <li><a href="#">Rapoo</a></li>
-                <li><a href="#">Razer</a></li>
-                <li><a href="#">SteelSeries</a></li>
+                <?php
+                include_once("../model/db.php");
+                $sql = 'select * from brand';
+                $result = readDatabase($sql);
+                foreach ($result as $brand) {
+                    echo '<li><a href="' . $brand[1] . '" target="_blank">' . $brand[0] . '</a></li>';
+                }
+                ?>
             </ul>
         </div>
         <div class="footer-store">
