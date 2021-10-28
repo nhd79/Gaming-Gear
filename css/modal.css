@@ -1,0 +1,65 @@
+.login-modal div,
+.signup-modal div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 190px 20px;
+}
+.signup-modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 490px;
+}
+.login-modal > form,
+.signup-modal > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 60px;
+}
+.login-modal > .text,
+.signup-modal > .text {
+  font-size: 30px;
+}
+.login-modal input,
+.signup-modal input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 40px;
+  width: 70%;
+  padding-left: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.login-modal input:focus,
+.signup-modal input:focus {
+  border: 2px solid var(--mainColor);
+}
+.login-modal button,
+.signup-modal button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 10px;
+  border: 1px solid var(--mainColor);
+  padding: 10px;
+  width: 70%;
+  font-size: 17px;
+
+  cursor: pointer;
+}
+/* @media screen and (max-width: 1000px) {
+  .login-modal input,
+  .signup-modal input {
+    width: 200px;
+  }
+  .login-modal button,
+  .signup-modal button {
+    width: 200px;
+  }
+} */
+.login-modal a {
+  color: var(--mainColor);
+}

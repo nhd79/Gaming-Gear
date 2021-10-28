@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/search-css.css" />
+    <link rel="stylesheet" href="../css/slides.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/checkout-page.css" />
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <title>GG</title>
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        <a href="index.html"
+          ><img src="../images/logo4.png" alt="Website's Logo" height="45"
+        /></a>
+        <a href="index.html" class="text">Gaming Gear</a>
+      </div>
+      <div>
+        <form
+          id="search-form"
+          name="search-form"
+          action="Search.php"
+          method="post"
+        >
+          <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <div class="search"></div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <a href="Cart.php" class="cart center">
+          <!-- <i class="fas fa-shopping-cart fa-2x"></i> -->
+          <img src="../images/icon-shopping-cart-2.png" class="cart-icon" />
+        </a>
+        <div style="padding-left: 20px; font-size: 18px">
+          <div style="color: crimson">1 Sản phẩm</div>
+          <div style="color: white; font-size: larger">5.000 đ</div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="Cart.php">GIỎ HÀNG</a>
+      <a href="login-modal.html" rel="modal:open">ĐĂNG NHẬP</a>
+      <a href="signup-modal.html" rel="modal:open">ĐĂNG KÝ</a>
+    </nav>
+    <!--  -->
+    <div class="checkout-page-grid">
+      <div class="order-summary">
+        <div>
+          <img
+            src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+            alt="banphim"
+            class="cart-item-img"
+          />
+          <div class="quantity">1</div>
+        </div>
+        <div>Bàn phím Rapoo V500L Rainbow</div>
+        <div>490,000</div>
+        <div>
+          <img
+            src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg"
+            alt="banphim"
+            class="cart-item-img"
+          />
+          <div class="quantity">2</div>
+        </div>
+        <div>Bàn phím Rapoo V500L Rainbow</div>
+        <div>490,000</div>
+        <div class="total">Tổng tiền: 490,000 VND</div>
+      </div>
+      <form method="post" action="index.html">
+        <div class="checkout-information">
+          <div class="text">Thông tin giao hàng</div>
+          <div>
+            <input type="text" name="name" id="name" placeholder="Họ và tên" />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Địa chỉ"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Số điện thoại"
+            />
+          </div>
+          <div>
+            <input type="text" name="email" id="email" placeholder="Email" />
+          </div>
+          <div>
+            <select name="payment">
+              <option>Chọn phương thức thanh toán</option>
+              <option value="COD">Tiền mặt khi nhận hàng</option>
+              <option value="Online-Banking">Online Banking</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit" class="order-button">Đặt hàng</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <span>Sản phẩm</span>
+        <span>Thương hiệu</span>
+        <span>Cửa hàng</span>
+        <span>Tin tức</span>
+      </div>
+      <div>
+        <div class="footer-products">
+          <ul>
+            <li><a href="#">Chuột</a></li>
+            <li><a href="#">Bàn phím</a></li>
+            <li><a href="#">Tai nghe</a></li>
+            <li><a href="#">Ghế</a></li>
+            <li><a href="#">Loa</a></li>
+            <li><a href="#">Lót chuột</a></li>
+          </ul>
+        </div>
+        <div class="footer-brands">
+          <ul>
+            <li><a href="#">AKKO</a></li>
+            <li><a href="#">AKRacing</a></li>
+            <li><a href="#">Anda</a></li>
+            <li><a href="#">Asus</a></li>
+            <li><a href="#">Corsair</a></li>
+            <li><a href="#">Cougar</a></li>
+            <li><a href="#">DareU</a></li>
+            <li><a href="#">DXRACER</a></li>
+            <li><a href="#">HyperX</a></li>
+            <li><a href="#">Leopold</a></li>
+            <li><a href="#">Logitech</a></li>
+            <li><a href="#">Rapoo</a></li>
+            <li><a href="#">Razer</a></li>
+            <li><a href="#">SteelSeries</a></li>
+          </ul>
+        </div>
+        <div class="footer-store">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Thông tin liên lạc</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-news">
+          <div>Đăng ký để nhận thông báo qua email</div>
+          <div>
+            <form method="post" action="Subscribe.php">
+              <input type="text" name="" id="" size="20" />
+              <button>Đăng ký</button>
+            </form>
+          </div>
+          <div>Liên lạc với chúng tôi</div>
+          <div>
+            <img src="../images/icon-phone.png" class="phone-icon" />+84 703 802
+            199
+          </div>
+          <div>
+            <img
+              src="../images/icon-email.png"
+              class="email-icon"
+            />hoangduy791999@gmail.com
+          </div>
+          <div>© 2021. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-button" class="to-top-button">
+      <a href="#top"><img src="../images/up-arrow.png" class="up-icon" /></a>
+    </div>
+    <script src="../js/scroll-button.js"></script>
+  </body>
+</html>

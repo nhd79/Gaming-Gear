@@ -1,0 +1,109 @@
+.user-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.profile-picture {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 80px 80px;
+  border-right: 1px solid lightgray;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.profile-picture div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 100vh;
+}
+.img-label {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+.img-label::after {
+  content: "Tải lên";
+  color: white;
+  background: var(--mainColor);
+  z-index: 2;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+.img-input {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.change-picture-button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 5px;
+  padding: 10px;
+
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--mainColor);
+  cursor: pointer;
+  font-size: 16px;
+}
+.customer-information {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  row-gap: 15px;
+}
+.customer-information div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customer-information > .text {
+  font-size: 30px;
+}
+.customer-information input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.customer-information input:focus {
+  border: 2px solid var(--mainColor);
+}
+.order-button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--mainColor);
+  cursor: pointer;
+  font-size: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .user-page-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-picture {
+    grid-template-rows: 150px 60px 60px;
+  }
+  .customer-information {
+    padding-top: 50px;
+  }
+}
