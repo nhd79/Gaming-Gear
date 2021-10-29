@@ -1,13 +1,11 @@
 <!-- Login Modal -->
 <div id="login-modal" class="login-modal">
-  <div class="text">
-    Đăng nhập
-  </div>
+  <div class="text">Đăng nhập</div>
   <form
     name="login-form"
     id="login-form"
     method="post"
-    action="index.php"
+    action="../index.php"
     class=""
   >
     <div>
@@ -27,9 +25,7 @@
       />
     </div>
     <div class="">
-      <button type="submit" name="login-button">
-        Đăng nhập
-      </button>
+      <button type="submit" name="login-button">Đăng nhập</button>
     </div>
   </form>
   <div>

@@ -1,13 +1,11 @@
 <!-- Signup Modal -->
 <div id="signup-modal" class="signup-modal">
-  <div class="text">
-    Đăng ký
-  </div>
+  <div class="text">Đăng ký</div>
   <form
     name="signup-form"
     id="signup-form"
     method="post"
-    action="index.php"
+    action="../index.php"
     class=""
   >
     <div>
@@ -57,9 +55,7 @@
       />
     </div>
     <div>
-      <button type="submit" name="signup-button">
-        Đăng ký
-      </button>
+      <button type="submit" name="signup-button">Đăng ký</button>
     </div>
   </form>
 </div>
