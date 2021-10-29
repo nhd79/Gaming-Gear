@@ -10,7 +10,7 @@
         <div class="footer-products">
             <ul>
                 <?php
-                include_once("../model/db.php");
+                include_once("./model/db.php");
                 $sql = 'select * from category';
                 $result = readDatabase($sql);
                 foreach ($result as $category) {
@@ -22,7 +22,7 @@
         <div class="footer-brands">
             <ul>
                 <?php
-                include_once("../model/db.php");
+                include_once("./model/db.php");
                 $sql = 'select * from brand';
                 $result = readDatabase($sql);
                 foreach ($result as $brand) {

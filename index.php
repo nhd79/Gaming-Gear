@@ -21,8 +21,8 @@
 
 <body>
   <?php
-  include_once("header.php");
-  include_once("nav.php");
+  include_once("./view/header.php");
+  include_once("./view/nav.php");
   ?>
 
   <!-- Slideshow -->
@@ -31,17 +31,17 @@
     <div class="mySlides fade">
       <img src="../images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="product.html">Xem sản phẩm</a>
+      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
       <img src="../images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="product.php">Xem sản phẩm</a>
+      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
       <img src="../images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="product.php">Xem sản phẩm</a>
+      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
     </div>
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -237,7 +237,7 @@
     <a href="product.php">Xem tất cả sản phẩm</a>
   </div>
   <?php
-  include_once("footer.php");
+  include_once("./view/footer.php");
   ?>
 </body>
 
