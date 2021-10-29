@@ -1,18 +1,18 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$dbusername = "root";
+$dbpassword = "";
 $dbname = "grid-gaming-gear";
 
 function readDatabase($sql)
 {
-    global $servername, $username, $password, $dbname;
+    global $servername, $dbusername, $dbpassword, $dbname;
     $options = array(
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     );
     try {
-        $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $username, $password, $options);
+        $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $dbusername, $dbpassword, $options);
         // echo "Connected successfully";
         $result = $connection->query($sql);
         return $result;
@@ -29,13 +29,13 @@ function readDatabase($sql)
 
 function writeDatabase($sql)
 {
-    global $servername, $username, $password, $dbname;
+    global $servername, $dbusername, $dbpassword, $dbname;
     $options = array(
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     );
 
-    $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $username, $password, $options);
+    $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $dbusername, $dbpassword, $options);
 
     try {
         $connection->beginTransaction();

@@ -1,4 +1,12 @@
 <div id="top"></div>
+<?php
+// session_start();
+// echo $_SESSION["full_name"];
+// if (isset($_REQUEST["logout"])) {
+//     session_destroy();
+//     echo "<script>location.href = 'index.php';</script>";
+// }
+?>
 <!-- Header -->
 <header>
     <div class="header-logo">

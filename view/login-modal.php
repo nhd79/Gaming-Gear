@@ -1,14 +1,14 @@
 <!-- Login Modal -->
 <div id="login-modal" class="login-modal">
   <div class="text">Đăng nhập</div>
-  <form name="login-form" id="login-form" method="post" action="/" class="">
+  <form name="login-form" id="login-form" method="post" action="../controller/login.php" class="">
     <div>
       <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." />
     </div>
     <div>
       <input type="password" name="password" id="password" placeholder="Mật khẩu..." />
     </div>
-    <div class="">
+    <div>
       <button type="submit" name="login-button">Đăng nhập</button>
     </div>
   </form>
