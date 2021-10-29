@@ -10,22 +10,14 @@
         <div class="footer-products">
             <ul>
                 <?php
-                $sql = 'select * from category';
-                $result = readDatabase($sql);
-                foreach ($result as $category) {
-                    echo '<li><a href="product.php?category_id=' . $category[0] . '">' . $category[1] . '</a></li>';
-                }
+                include_once("../controller/footer-product.php")
                 ?>
             </ul>
         </div>
         <div class="footer-brands">
             <ul>
                 <?php
-                $sql = 'select * from brand';
-                $result = readDatabase($sql);
-                foreach ($result as $brand) {
-                    echo '<li><a href="' . $brand[1] . '" target="_blank">' . $brand[0] . '</a></li>';
-                }
+                include_once("../controller/footer-brand.php")
                 ?>
             </ul>
         </div>
