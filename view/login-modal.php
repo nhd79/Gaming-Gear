@@ -1,28 +1,12 @@
 <!-- Login Modal -->
 <div id="login-modal" class="login-modal">
   <div class="text">Đăng nhập</div>
-  <form
-    name="login-form"
-    id="login-form"
-    method="post"
-    action="../index.php"
-    class=""
-  >
+  <form name="login-form" id="login-form" method="post" action="/" class="">
     <div>
-      <input
-        type="text"
-        name="username"
-        id="username"
-        placeholder="Tên đăng nhập..."
-      />
+      <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." />
     </div>
     <div>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Mật khẩu..."
-      />
+      <input type="password" name="password" id="password" placeholder="Mật khẩu..." />
     </div>
     <div class="">
       <button type="submit" name="login-button">Đăng nhập</button>

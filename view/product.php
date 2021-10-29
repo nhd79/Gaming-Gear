@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -128,7 +128,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -147,7 +147,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -166,7 +166,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">
@@ -185,7 +185,7 @@
           </div>
         </div>
         <div class="center">
-          <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+          <img src="../images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
         </div>
         <div class="item-name">Leopold FC660MPD Sweden White Case</div>
         <div class="detail-button-price-grid">

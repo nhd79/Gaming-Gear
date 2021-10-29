@@ -10,11 +10,10 @@
         <div class="footer-products">
             <ul>
                 <?php
-                include_once("./model/db.php");
                 $sql = 'select * from category';
                 $result = readDatabase($sql);
                 foreach ($result as $category) {
-                    echo '<li><a href="product.php?product_id=' . $category[0] . '">' . $category[1] . '</a></li>';
+                    echo '<li><a href="../view/product.php?category_id=' . $category[0] . '">' . $category[1] . '</a></li>';
                 }
                 ?>
             </ul>
@@ -22,7 +21,6 @@
         <div class="footer-brands">
             <ul>
                 <?php
-                include_once("./model/db.php");
                 $sql = 'select * from brand';
                 $result = readDatabase($sql);
                 foreach ($result as $brand) {
@@ -33,7 +31,7 @@
         </div>
         <div class="footer-store">
             <ul>
-                <li><a href="index.php">Trang chủ</a></li>
+                <li><a href="../index.php">Trang chủ</a></li>
                 <li><a href="product.php">Sản phẩm</a></li>
                 <li><a href="#">Chính sách bảo hành</a></li>
                 <li><a href="#">Thông tin liên lạc</a></li>
