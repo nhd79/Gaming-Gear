@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/search-css.css" />
-  <link rel="stylesheet" href="../css/slides.css" />
-  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/search-css.css" />
+  <link rel="stylesheet" href="/css/slides.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
 
   <!-- Remember to include jQuery :) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -55,11 +55,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -74,11 +74,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/Logitech G604 Hero Lightspeed Wireless.jpg" alt="chuot" class="item-img" />
+        <img src="/images/Logitech G604 Hero Lightspeed Wireless.jpg" alt="chuot" class="item-img" />
       </div>
       <div class="item-name">Logitech G604 Hero Lightspeed Wireless</div>
       <div class="detail-button-price-grid">
@@ -93,11 +93,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -112,11 +112,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -131,11 +131,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -150,11 +150,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -169,11 +169,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">
@@ -188,11 +188,11 @@
         </div>
         <div class="cart-plus center">
           <a href="Cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">Leopold FC660MPD Sweden White Case</div>
       <div class="detail-button-price-grid">

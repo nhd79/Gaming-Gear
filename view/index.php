@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/search-css.css" />
-  <link rel="stylesheet" href="../css/slides.css" />
-  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/search-css.css" />
+  <link rel="stylesheet" href="/css/slides.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
 
   <!-- Remember to include jQuery :) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -29,19 +29,19 @@
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img src="../images/slide4.jpg" width="100%" />
+      <img src="/images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
+      <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="../images/slide4.jpg" width="100%" />
+      <img src="/images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
+      <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="../images/slide4.jpg" width="100%" />
+      <img src="/images/slide4.jpg" width="100%" />
       <div class="slide-text">Epic Gear</div>
-      <a class="banner-button" href="./view/product.php">Xem sản phẩm</a>
+      <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -53,7 +53,7 @@
       <span class="dot dot3" onclick="currentSlide(3)"></span>
     </div>
   </div>
-  <script src="../js/slides.js"></script>
+  <script src="/js/slides.js"></script>
   <!-- News -->
   <div class="news-grid" style="position: relative; top: -4px">
     <div class="news-1">1</div>
@@ -71,12 +71,12 @@
       $sql = 'select * from category';
       $result = readDatabase($sql);
       foreach ($result as $category) {
-        echo '<a href="../view/product.php?category_id=' . $category[0] . '">' . $category[1] . '</a>';
+        echo '<a href="product.php?category_id=' . $category[0] . '">' . $category[1] . '</a>';
       }
       ?>
     </div>
     <div class="product-page-button">
-      <a href="../view/product.php">Xem tất cả sản phẩm</a>
+      <a href="product.php">Xem tất cả sản phẩm</a>
     </div>
   </div>
   <!-- Product -->
@@ -95,16 +95,16 @@
           <a href="product.php?category_id=' . $product[0] . '"" class="item-category">' . $product[1] . '</a>
         </div>
         <div class="cart-plus center">
-          <a href="../view/cart.php">
-            <img src="../images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+          <a href="cart.php">
+            <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
         </div>
       </div>
       <div class="center">
-        <img src="../images/' . $product[5] . '" alt="banphim" class="item-img" />
+        <img src="/images/' . $product[5] . '" alt="banphim" class="item-img" />
       </div>
       <div class="item-name">' . $product[3] . '</div>
       <div class="detail-button-price-grid">
-        <a href="#" class="detail-button center">Chi tiết</a>
+        <a href="detail.php?product_id=' . $product[2] . '" class="detail-button center">Chi tiết</a>
         <div class="price center">' . $product[4] . ' VND</div>
       </div>
     </div>';
@@ -112,7 +112,7 @@
     ?>
   </div>
   <div class="browse-all">
-    <a href="/view/product.php?category_id=1">Xem tất cả sản phẩm</a>
+    <a href="product.php?category_id=1">Xem tất cả sản phẩm</a>
   </div>
   <?php
   include_once("footer.php");

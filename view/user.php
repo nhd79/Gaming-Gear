@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/search-css.css" />
-  <link rel="stylesheet" href="../css/slides.css" />
-  <link rel="stylesheet" href="../css/modal.css" />
-  <link rel="stylesheet" href="../css/user-page.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/search-css.css" />
+  <link rel="stylesheet" href="/css/slides.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/css/user-page.css" />
 
   <!-- Remember to include jQuery :) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -30,7 +30,7 @@
     <form method="post">
       <div class="profile-picture">
         <div>
-          <img src="../images/user.png" alt="User's picture" class="user-img" width="80%" />
+          <img src="/images/user.png" alt="User's picture" class="user-img" width="80%" />
         </div>
         <div>
           <label class="img-label">

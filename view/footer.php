@@ -13,7 +13,7 @@
                 $sql = 'select * from category';
                 $result = readDatabase($sql);
                 foreach ($result as $category) {
-                    echo '<li><a href="../view/product.php?category_id=' . $category[0] . '">' . $category[1] . '</a></li>';
+                    echo '<li><a href="product.php?category_id=' . $category[0] . '">' . $category[1] . '</a></li>';
                 }
                 ?>
             </ul>
@@ -31,7 +31,7 @@
         </div>
         <div class="footer-store">
             <ul>
-                <li><a href="../index.php">Trang chủ</a></li>
+                <li><a href="/">Trang chủ</a></li>
                 <li><a href="product.php">Sản phẩm</a></li>
                 <li><a href="#">Chính sách bảo hành</a></li>
                 <li><a href="#">Thông tin liên lạc</a></li>
@@ -48,17 +48,17 @@
             </div>
             <div>Liên lạc với chúng tôi</div>
             <div>
-                <img src="../images/icon-phone.png" class="phone-icon" />+84 703 802
+                <img src="/images/icon-phone.png" class="phone-icon" />+84 703 802
                 199
             </div>
             <div>
-                <img src="../images/icon-email.png" class="email-icon" />hoangduy791999@gmail.com
+                <img src="/images/icon-email.png" class="email-icon" />hoangduy791999@gmail.com
             </div>
             <div>© 2021. All rights reserved.</div>
         </div>
     </div>
 </footer>
 <div id="scroll-button" class="to-top-button">
-    <a href="#top"><img src="../images/up-arrow.png" class="up-icon" /></a>
+    <a href="#top"><img src="/images/up-arrow.png" class="up-icon" /></a>
 </div>
-<script src="../js/scroll-button.js"></script>
+<script src="/js/scroll-button.js"></script>

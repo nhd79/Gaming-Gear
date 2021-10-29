@@ -14,7 +14,7 @@
         </form>
     </div>
     <div>
-        <a href="/view/cart.php" class="cart center">
+        <a href="cart.php" class="cart center">
             <img src="/images/icon-shopping-cart-2.png" class="cart-icon" />
         </a>
         <div style="padding-left: 20px; font-size: 18px">

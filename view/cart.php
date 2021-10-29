@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/search-css.css" />
-  <link rel="stylesheet" href="../css/slides.css" />
-  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/search-css.css" />
+  <link rel="stylesheet" href="/css/slides.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
 
-  <link rel="stylesheet" href="../css/cart-page.css" />
+  <link rel="stylesheet" href="/css/cart-page.css" />
 
   <!-- Remember to include jQuery :) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -37,7 +37,7 @@
       <div class="label"></div>
       <!--  -->
       <div>
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
       </div>
       <div>Bàn phím Rapoo V500L Rainbow</div>
       <div>
@@ -47,23 +47,10 @@
       <div>980,000</div>
       <div>
         <a href="#" class="garbage-button center">
-          <img src="../images/icon-garbage-2.png" class="garbage-icon" /></a>
+          <img src="/images/icon-garbage-2.png" class="garbage-icon" /></a>
       </div>
       <div>
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
-      </div>
-      <div>Bàn phím Rapoo V500L Rainbow</div>
-      <div>
-        <input type="number" min="1" max="100" value="1" name="quantity" class="quantity" />
-      </div>
-      <div>490,000</div>
-      <div>980,000</div>
-      <div>
-        <a href="#" class="garbage-button center">
-          <img src="../images/icon-garbage-2.png" class="garbage-icon" /></a>
-      </div>
-      <div>
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
       </div>
       <div>Bàn phím Rapoo V500L Rainbow</div>
       <div>
@@ -73,23 +60,10 @@
       <div>980,000</div>
       <div>
         <a href="#" class="garbage-button center">
-          <img src="../images/icon-garbage-2.png" class="garbage-icon" /></a>
+          <img src="/images/icon-garbage-2.png" class="garbage-icon" /></a>
       </div>
       <div>
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
-      </div>
-      <div>Bàn phím Rapoo V500L Rainbow</div>
-      <div>
-        <input type="number" min="1" max="100" value="1" name="quantity" class="quantity" />
-      </div>
-      <div>490,000</div>
-      <div>980,000</div>
-      <div>
-        <a href="#" class="garbage-button center">
-          <img src="../images/icon-garbage-2.png" class="garbage-icon" /></a>
-      </div>
-      <div>
-        <img src="../images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
       </div>
       <div>Bàn phím Rapoo V500L Rainbow</div>
       <div>
@@ -99,7 +73,33 @@
       <div>980,000</div>
       <div>
         <a href="#" class="garbage-button center">
-          <img src="../images/icon-garbage-2.png" class="garbage-icon" /></a>
+          <img src="/images/icon-garbage-2.png" class="garbage-icon" /></a>
+      </div>
+      <div>
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
+      </div>
+      <div>Bàn phím Rapoo V500L Rainbow</div>
+      <div>
+        <input type="number" min="1" max="100" value="1" name="quantity" class="quantity" />
+      </div>
+      <div>490,000</div>
+      <div>980,000</div>
+      <div>
+        <a href="#" class="garbage-button center">
+          <img src="/images/icon-garbage-2.png" class="garbage-icon" /></a>
+      </div>
+      <div>
+        <img src="/images/AKKO 3087 Dragon Ball Z – Goku2.jpg" alt="banphim" class="cart-item-img" />
+      </div>
+      <div>Bàn phím Rapoo V500L Rainbow</div>
+      <div>
+        <input type="number" min="1" max="100" value="1" name="quantity" class="quantity" />
+      </div>
+      <div>490,000</div>
+      <div>980,000</div>
+      <div>
+        <a href="#" class="garbage-button center">
+          <img src="/images/icon-garbage-2.png" class="garbage-icon" /></a>
       </div>
       <!--  -->
       <div class="total">Tổng tiền: 490,000 VND</div>
