@@ -15,18 +15,15 @@ if (isset($_POST["signup-username"])) {
     if ($exist != 1) {
         if ($_POST["signup-password"] == $_POST["password-repeat"]) {
             $hashed_password = password_hash($_POST["signup-password"], PASSWORD_DEFAULT);
-            $sql = "insert into customer(user_name,password,full_name,address,phone,email,avatar)
+            $sql = "insert into customer(user_name,password,full_name,address,phone,email,image)
 			values('" . $_POST["signup-username"] . "','" . $hashed_password . "','" . $_POST["fullname"] . "','"
                 . $_POST["address"] . "','" . $_POST["phone-number"] . "','" . $_POST["email"] . "','user.png')";
             writeDatabase($sql);
             echo "<script>alert('Đăng ký thành công!');</script>";
-            // echo "<script>location.href = 'index.php';</script>";
         } else {
             echo "<script>alert('Mật khẩu xác nhận không đúng!');</script>";
-            // echo "<script>location.href = 'index.php';</script>";
         }
     } else {
         echo "<script>alert('Tài khoản đã tồn tại!');</script>";
-        // echo "<script>location.href = 'index.php';</script>";
     }
 }
