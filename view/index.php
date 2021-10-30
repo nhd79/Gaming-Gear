@@ -24,6 +24,7 @@
   include_once("header.php");
   include_once("nav.php");
   include_once("../controller/login.php");
+  include_once("../controller/signup.php");
   ?>
 
   <!-- Slideshow -->

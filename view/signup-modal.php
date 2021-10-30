@@ -1,12 +1,12 @@
 <!-- Signup Modal -->
 <div id="signup-modal" class="signup-modal">
   <div class="text">Đăng ký</div>
-  <form name="signup-form" id="signup-form" method="post" action="/" class="">
+  <form name="signup-form" id="signup-form" method="post" action="<?php echo htmlspecialchars('index.php'); ?>" class="">
     <div>
-      <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." required />
+      <input type="text" name="signup-username" id="signup-username" placeholder="Tên đăng nhập..." required />
     </div>
     <div>
-      <input type="password" name="password" id="password" placeholder="Mật khẩu..." required />
+      <input type="password" name="signup-password" id="signup-password" placeholder="Mật khẩu..." required />
     </div>
     <div>
       <input type="password" name="password-repeat" id="password-repeat" placeholder="Xác nhận mật khẩu..." required />
