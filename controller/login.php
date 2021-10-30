@@ -9,7 +9,6 @@ if (isset($_POST["username"])) {
     $result = readDatabase($sql);
     if ($result->rowCount() > 0) {
         foreach ($result as $customer) {
-            session_start();
             $_SESSION["full_name"] = $customer["full_name"];
             $_SESSION["id"] = $customer["id"];
             $_SESSION["email"] = $customer["email"];
@@ -17,9 +16,8 @@ if (isset($_POST["username"])) {
             $_SESSION["address"] = $customer["address"];
             $_SESSION["image"] = $customer["image"];
         }
-        echo "<script>location.href = '../view/index.php';</script>";
+        echo "<script>location.href = 'index.php';</script>";
     } else {
-        echo "<script>alert('Đăng nhập sai!');</script>";
-        echo "<script>location.href = '../view/index.php';</script>";
+        echo "<script>alert('Sai thông tin tài khoản hoặc mật khẩu!');</script>";
     }
 }

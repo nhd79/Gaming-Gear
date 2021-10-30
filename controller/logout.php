@@ -6,7 +6,7 @@ if ($name == $name2) {
     <a href="index.php?logout=1">ĐĂNG XUẤT</a>
     ';
 } else {
-    echo '<a href="User.php">User</a>
+    echo '<a href="user.php">KHÁCH HÀNG</a>
     <a href="index.php?logout=1">ĐĂNG XUẤT</a>
     ';
 }
