@@ -18,13 +18,13 @@ if (isset($_POST["username"])) {
                 $_SESSION["phone"] = $customer["phone"];
                 $_SESSION["address"] = $customer["address"];
                 $_SESSION["image"] = $customer["image"];
+                echo "<script>alert('Đăng nhập thành công!');</script>";
             } else {
                 echo "<script>alert('Sai mật khẩu!');</script>";
             }
         }
-        echo "<script>alert('Đăng nhập thành công!');</script>";
         echo "<script>location.href = 'index.php';</script>";
     } else {
-        echo "<script>alert('Sai thông tin tài khoản!');</script>";
+        echo "<script>alert('Tài khoản không tồn tại!');</script>";
     }
 }
