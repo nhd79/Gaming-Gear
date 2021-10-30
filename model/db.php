@@ -4,7 +4,7 @@ $dbusername = "root";
 $dbpassword = "";
 $dbname = "grid-gaming-gear";
 
-function readDatabase($sql)
+function readDatabase($sql, $parameter)
 {
     global $servername, $dbusername, $dbpassword, $dbname;
     $options = array(
@@ -14,7 +14,10 @@ function readDatabase($sql)
     try {
         $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $dbusername, $dbpassword, $options);
         // echo "Connected successfully";
-        $result = $connection->query($sql);
+        $prepare_sql = $connection->prepare($sql);
+        $prepare_sql->execute($parameter);
+        $result = $prepare_sql->fetchAll();
+        // $result = $connection->query($sql);
         return $result;
         $connection = null;
     } catch (PDOException $e) {

@@ -7,9 +7,14 @@ if (isset($_POST["username"])) {
     $username = test_input($_POST["username"]);
     $password = test_input($_POST["password"]);
 
-    $sql = "select * from customer where user_name='" . $username . "'";
-    $result = readDatabase($sql);
-    if ($result->rowCount() > 0) {
+    // $sql = "select * from customer where user_name='" . $username . "'";
+    // $prepare_sql = 
+    // $result = readDatabase($sql);
+    $sql = "select * from customer where user_name = ?";
+    $parameter = array($username);
+    $result = readDatabase($sql, $parameter);
+    // if ($result->rowCount() > 0) {
+    if (count($result) > 0) {
         foreach ($result as $customer) {
             if (password_verify($password, $customer["password"])) {
                 $_SESSION["full_name"] = $customer["full_name"];
