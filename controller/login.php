@@ -8,12 +8,11 @@ if (isset($_POST["username"])) {
     $password = test_input($_POST["password"]);
 
     // $sql = "select * from customer where user_name='" . $username . "'";
-    // $prepare_sql = 
     // $result = readDatabase($sql);
     $sql = "select * from customer where user_name = ?";
     $parameter = array($username);
     $result = readDatabase($sql, $parameter);
-    // if ($result->rowCount() > 0) {
+    // if ($result->rowCount() > 0) { // rowCount for object because query() returns object
     if (count($result) > 0) {
         foreach ($result as $customer) {
             if (password_verify($password, $customer["password"])) {

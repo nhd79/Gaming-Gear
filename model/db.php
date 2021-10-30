@@ -30,7 +30,7 @@ function readDatabase($sql, $parameter)
 //     echo $danhmuc[1];
 // }
 
-function writeDatabase($sql)
+function writeDatabase($sql, $parameter)
 {
     global $servername, $dbusername, $dbpassword, $dbname;
     $options = array(
@@ -42,7 +42,11 @@ function writeDatabase($sql)
 
     try {
         $connection->beginTransaction();
-        $connection->exec($sql);
+
+        $prepare_sql = $connection->prepare($sql);
+        $prepare_sql->execute($parameter);
+        // $connection->exec($sql);
+
         $connection->commit();
     } catch (PDOException $e) {
         $connection->rollBack();
