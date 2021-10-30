@@ -1,10 +1,11 @@
 <?php
 
 include_once("../model/db.php");
+include_once("form-validation.php");
 
 if (isset($_POST["username"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    $username = test_input($_POST["username"]);
+    $password = test_input($_POST["password"]);
     $sql = "select * from customer where user_name='" . $username . "' and password='" . $password . "'";
     $result = readDatabase($sql);
     if ($result->rowCount() > 0) {
