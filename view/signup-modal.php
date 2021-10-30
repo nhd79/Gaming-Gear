@@ -3,13 +3,13 @@
   <div class="text">Đăng ký</div>
   <form name="signup-form" id="signup-form" method="post" action="/" class="">
     <div>
-      <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." />
+      <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." required />
     </div>
     <div>
-      <input type="password" name="password" id="password" placeholder="Mật khẩu..." />
+      <input type="password" name="password" id="password" placeholder="Mật khẩu..." required />
     </div>
     <div>
-      <input type="password" name="password-repeat" id="password-repeat" placeholder="Xác nhận mật khẩu..." />
+      <input type="password" name="password-repeat" id="password-repeat" placeholder="Xác nhận mật khẩu..." required />
     </div>
     <div>
       <input type="text" name="fullname" id="fullname" placeholder="Họ tên..." />
