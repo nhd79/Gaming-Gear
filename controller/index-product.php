@@ -1,12 +1,12 @@
 <?php
-    $sql = 'select category.id,category.name,product.id,product.name,price,image 
+$sql = 'select category.id,category.name,product.id,product.name,price,image 
     from product 
     INNER JOIN category ON product.category_id=category.id 
     limit 0,8
     ';
-    $result = readDatabase($sql);
-    foreach ($result as $product) {
-      echo '<div class="item">
+$result = readDatabase($sql, array());
+foreach ($result as $product) {
+  echo '<div class="item">
       <div class="item-category-cart-grid center">
         <div>
           <a href="product.php?category_id=' . $product[0] . '"" class="item-category">' . $product[1] . '</a>
@@ -25,4 +25,4 @@
         <div class="price center">' . number_format($product[4]) . ' VND</div>
       </div>
     </div>';
-    }
+}
