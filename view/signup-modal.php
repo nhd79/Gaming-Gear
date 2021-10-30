@@ -12,16 +12,16 @@
       <input type="password" name="password-repeat" id="password-repeat" placeholder="Xác nhận mật khẩu..." required />
     </div>
     <div>
-      <input type="text" name="fullname" id="fullname" placeholder="Họ tên..." />
+      <input type="text" name="fullname" id="fullname" placeholder="Họ tên..." required />
     </div>
     <div>
-      <input type="text" name="email" id="email" placeholder="Email..." />
+      <input type="text" name="email" id="email" placeholder="Email..." required />
     </div>
     <div>
-      <input type="text" name="address" id="address" placeholder="Địa chỉ..." />
+      <input type="text" name="address" id="address" placeholder="Địa chỉ..." required />
     </div>
     <div>
-      <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại..." />
+      <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại..." required />
     </div>
     <div>
       <button type="submit" name="signup-button">Đăng ký</button>
