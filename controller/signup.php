@@ -28,7 +28,7 @@ if (isset($_POST["signup-username"])) {
         echo "<script>alert('Số điện thoại chỉ chứa số!');</script>";
     } else {
         $sql = "select user_name from customer where 1";
-        $result = readDatabase($sql);
+        $result = readDatabase($sql, array());
         $exist = 0;
         foreach ($result as $customer) {
             if ($username == $customer["user_name"]) {
