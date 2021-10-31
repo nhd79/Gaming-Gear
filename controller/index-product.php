@@ -1,8 +1,9 @@
 <?php
 $sql = 'select category.id,category.name,product.id,product.name,price,image 
-    from product 
-    INNER JOIN category ON product.category_id=category.id 
-    limit 0,8
+from product 
+INNER JOIN category ON product.category_id=category.id 
+ORDER by rand()
+limit 8
     ';
 $result = readDatabase($sql, array());
 foreach ($result as $product) {
