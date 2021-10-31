@@ -13,7 +13,8 @@ if (isset($_REQUEST["added_product_id"])) {
         $cart[$product_id][2]++;
     else {
         include_once("../model/db.php");
-        $result = readDatabase("select * from product where id=" . $product_id);
+        $sql = "select * from product where id=?";
+        $result = readDatabase($sql, array($product_id));
         foreach ($result as $product) {
             $item = array($product[0], $product[2], 1, $product[3], $product[4]);
             $cart[$product_id] = $item;
