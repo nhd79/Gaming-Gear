@@ -154,7 +154,7 @@ nav > a:hover {
   .news-4 {
     grid-area: news4;
 
-    background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash146x100.jpg);
+    /* background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash146x100.jpg); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -171,7 +171,7 @@ nav > a:hover {
 .news-2 {
   grid-area: news2;
 
-  background-image: url(../images/cyberpunk-900-506.png);
+  /* background-image: url(../images/cyberpunk-900-506.png); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -181,7 +181,7 @@ nav > a:hover {
 .news-4 {
   grid-area: news4;
 
-  background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash.jpg);
+  /* background-image: url(../images/branden-skeli-r4YWfVVwTQ8-unsplash.jpg); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

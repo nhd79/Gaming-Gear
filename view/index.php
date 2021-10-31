@@ -59,9 +59,9 @@
   <!-- News -->
   <div class="news-grid" style="position: relative; top: -4px">
     <div class="news-1">1</div>
-    <div class="news-2"></div>
+    <div class="news-2">2</div>
     <div class="news-3">3</div>
-    <div class="news-4"></div>
+    <div class="news-4">4</div>
     <div class="news-5">5</div>
     <div class="news-6">6</div>
   </div>
