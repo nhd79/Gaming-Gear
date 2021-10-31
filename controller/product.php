@@ -36,7 +36,7 @@ foreach ($result as $product) {
             <a href="detail.php?product_id=' . $product[2] . '">
                 ' . $product[3] . '
             </a>
-            </div>
+          </div>
           <div class="detail-button-price-grid">
             <a href="detail.php?product_id=' . $product[2] . '" class="detail-button center">Chi tiết</a>
             <div class="price center">' . number_format($product[4]) . ' VND</div>

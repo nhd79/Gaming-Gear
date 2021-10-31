@@ -13,9 +13,9 @@ if (isset($_REQUEST["logout"])) {
         <a href="/" class="text">Gaming Gear</a>
     </div>
     <div>
-        <form id="search-form" name="search-form" action="/view/search.php" method="post">
+        <form id="search-form" name="search-form" action="<?php echo htmlspecialchars('search.php'); ?>" method="post">
             <div class="search-container">
-                <input type="text" placeholder="Tìm kiếm..." />
+                <input type="text" name="search-text" id="search-text" placeholder="Tìm kiếm..." />
                 <div class="search"></div>
             </div>
         </form>
