@@ -37,23 +37,11 @@
     </div>
     <!-- Product -->
     <div class="detail-grid center">
-      <div class="product">
-        <div>
-          <img src="/images/Cougar Armor K Black.png" alt="banphim" class="product-img" />
-        </div>
-        <div class="product-name">Leopold FC660MPD Sweden White Case</div>
-        <div class="product-price">2,750,000 VND</div>
-        <div>Hãng sản xuất: Akko</div>
-        <div>Tình trạng: Mới 100%</div>
-        <div>Bảo hành: 12 Tháng</div>
-        <div>Switch: Akko switch (Blue/Orange/Pink)</div>
-        <div>
-          <a href="#" class="add-to-cart-button">Thêm vào giỏ hàng</a>
-        </div>
-      </div>
+      <?php
+      include_once("../controller/detail.php")
+      ?>
     </div>
   </div>
-
   <?php
   include_once("footer.php");
   ?>

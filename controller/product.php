@@ -1,20 +1,23 @@
 <?php
-$category_id = 0;
 include_once("form-validation.php");
+
+$category_id = 0;
+
 if (isset($_GET["category_id"]))
-    $category_id = test_input($_GET["category_id"]);
+  $category_id = test_input($_GET["category_id"]);
+
 if ($category_id == 0)
-    $result = readDatabase("select category.id,category.name,product.id,product.name,price,image 
+  $result = readDatabase('select category.id,category.name,product.id,product.name,price,image 
     from product 
-    INNER JOIN category ON product.category_id=category.id ", array());
+    INNER JOIN category ON product.category_id=category.id', array());
 else
-    $result = readDatabase("select category.id,category.name,product.id,product.name,price,image 
+  $result = readDatabase('select category.id,category.name,product.id,product.name,price,image 
     from product 
     INNER JOIN category ON product.category_id=category.id 
-    where category_id=?", array($category_id));
+    where category_id=?', array($category_id));
 
 foreach ($result as $product) {
-    echo '<div class="item">
+  echo '<div class="item">
           <div class="item-category-cart-grid center">
             <div>
                 <a href="product.php?category_id=' . $product[0] . '"" class="item-category">' . $product[1] . '</a>

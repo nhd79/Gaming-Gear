@@ -36,7 +36,7 @@
     </div>
     <!-- Product -->
     <div class="product-page-product-grid">
-      <?php include_once("../controller/product-product.php"); ?>
+      <?php include_once("../controller/product.php"); ?>
     </div>
   </div>
   </div>
