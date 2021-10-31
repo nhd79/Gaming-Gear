@@ -32,7 +32,7 @@ foreach ($result as $product) {
                 <img src="/images/' . $product[5] . '" alt="banphim" class="item-img" />
             </a>
           </div>
-          <div class="item-name">
+          <div class="item-name center">
             <a href="detail.php?product_id=' . $product[2] . '">
                 ' . $product[3] . '
             </a>
