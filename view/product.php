@@ -31,12 +31,7 @@
     <div class="product-page-category-grid">
       <div class="category-text center">Danh mục sản phẩm</div>
       <div class="center">
-        <a href="product.php">Chuột</a>
-        <a href="product.php">Bàn phím</a>
-        <a href="product.php">Tai nghe</a>
-        <a href="product.php">Ghế</a>
-        <a href="product.php">Loa</a>
-        <a href="product.php">Lót chuột</a>
+        <?php include_once("../controller/product-category.php"); ?>
       </div>
     </div>
     <!-- Product -->
