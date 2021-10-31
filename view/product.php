@@ -31,7 +31,7 @@
     <div class="product-page-category-grid">
       <div class="category-text center">Danh mục sản phẩm</div>
       <div class="center">
-        <?php include_once("../controller/product-category.php"); ?>
+        <?php include_once("../controller/index-category.php"); ?>
       </div>
     </div>
     <!-- Product -->
