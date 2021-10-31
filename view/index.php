@@ -84,7 +84,7 @@
     ?>
   </div>
   <div class="browse-all">
-    <a href="product.php?category_id=1">Xem tất cả sản phẩm</a>
+    <a href="product.php">Xem tất cả sản phẩm</a>
   </div>
   <?php
   include_once("footer.php");

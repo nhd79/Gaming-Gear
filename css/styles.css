@@ -305,6 +305,9 @@ nav > a:hover {
 .item-name {
   font-weight: bold;
 }
+.item-name > a {
+  color: black;
+}
 .detail-button-price-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

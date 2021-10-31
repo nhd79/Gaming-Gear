@@ -18,9 +18,15 @@ foreach ($result as $product) {
         </div>
       </div>
       <div class="center">
-        <img src="/images/' . $product[5] . '" alt="banphim" class="item-img" />
+        <a href="detail.php?product_id=' . $product[2] . '">
+          <img src="/images/' . $product[5] . '" alt="banphim" class="item-img" />
+        </a>
       </div>
-      <div class="item-name">' . $product[3] . '</div>
+      <div class="item-name">
+        <a href="detail.php?product_id=' . $product[2] . '">
+          ' . $product[3] . '
+        </a>
+      </div>
       <div class="detail-button-price-grid">
         <a href="detail.php?product_id=' . $product[2] . '" class="detail-button center">Chi tiết</a>
         <div class="price center">' . number_format($product[4]) . ' VND</div>
