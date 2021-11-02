@@ -25,12 +25,15 @@
   include_once("header.php");
   include_once("nav.php");
   ?>
+  <?php
+  include_once("../controller/user.php");
+  ?>
   <!--  -->
   <div class="user-page-grid">
-    <form method="post">
+    <form method="post" enctype="multipart/form-data" <?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>>
       <div class="profile-picture">
         <div>
-          <img src="/images/user.png" alt="User's picture" class="user-img" width="80%" />
+          <img src="/images/<?php echo $image; ?>" alt="User's picture" class="user-img" width="80%" />
         </div>
         <div>
           <label class="img-label">
@@ -54,20 +57,20 @@
       </div>
     </form>
 
-    <form method="post" action="user.html">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
       <div class="customer-information">
         <div class="text">Thông tin khách hàng</div>
         <div>
-          <input type="text" name="name" id="name" placeholder="Họ và tên" />
+          <input type="text" name="name" id="name" placeholder="Họ và tên" value="<?php echo $full_name; ?>" />
         </div>
         <div>
-          <input type="text" name="address" id="address" placeholder="Địa chỉ" />
+          <input type="text" name="address" id="address" placeholder="Địa chỉ" value="<?php echo $address; ?>" />
         </div>
         <div>
-          <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại" />
+          <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại" value="<?php echo $phone; ?>" />
         </div>
         <div>
-          <input type="text" name="email" id="email" placeholder="Email" />
+          <input type="text" name="email" id="email" placeholder="Email" value="<?php echo $email; ?>" />
         </div>
 
         <div>
