@@ -10,13 +10,40 @@ if (isset($_SESSION["id"])) {
     $image = $_SESSION["image"];
 }
 
-if (isset($_POST["user-img"])) {
-    // $file = test_input($_POST["user-img"]);
-    $file = $_FILES["user-img"]["name"];
-    $sql = 'update customer set image=? where id=?';
-    $parameter = array($file, $user_id);
-    writeDatabase($sql, $parameter);
-    move_uploaded_file($_FILES["file"]["tmp_name"], '/images/' . $file);
+if (isset($_POST["submit"])) {
+
+    // File upload path
+    $targetDir = "../images/";
+    $fileName = basename($_FILES["file"]["name"]);
+    $targetFilePath = $targetDir . $fileName;
+    $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
+    if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
+        // Allow certain file formats
+        $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
+        if (!file_exists($targetFilePath)) {
+            if (in_array($fileType, $allowTypes)) {
+                // Upload file to server
+                if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+                    // Insert image file name into database
+                    $sql = 'update customer set image=? where id=?';
+                    $parameter = array($fileName, $user_id);
+                    writeDatabase($sql, $parameter);
+                    echo "<script>alert('Đổi ảnh đại diện thành công!');</script>";
+                    // Retrieve new image 
+                    $sql = 'select image from customer where id =?';
+                    $result = readDatabase($sql, array($user_id));
+                    foreach ($result as $user) {
+                        $image = $user[0];
+                    }
+                } else
+                    echo "<script>alert('Đã có lỗi xảy ra!');</script>";
+            } else
+                echo "<script>alert('Chỉ cho phép định dạng JPG, JPEG, PNG, GIF, PDF!');</script>";
+        } else
+            echo "<script>alert('File " . $fileName . " đã tồn tại');</script>";
+    } else
+        echo "<script>alert('Hãy chọn file để tải lên!');</script>";
 }
 
 

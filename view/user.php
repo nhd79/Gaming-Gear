@@ -37,7 +37,7 @@
         </div>
         <div>
           <label class="img-label">
-            <input type="file" name="user-img" class="img-input" />
+            <input type="file" name="file" class="img-input" />
             <span class="text">Chọn ảnh đại diện&ensp;</span></label>
           <script>
             //Name appear
@@ -50,7 +50,7 @@
           </script>
         </div>
         <div class="col-lg-11">
-          <button type="submit" class="change-picture-button">
+          <button type="submit" name="submit" class="change-picture-button">
             Đổi ảnh đại diện
           </button>
         </div>
