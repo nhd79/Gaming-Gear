@@ -66,5 +66,8 @@ if (isset($_SESSION["cart"])) {
         echo "<script>alert('Bạn chưa chọn sản phẩm nào!')</script>";
         echo "<script>location.href = 'index.php';</script>";
     }
+} else if (!isset($_SESSION["cart"])) {
+    echo "<script>alert('Bạn chưa chọn sản phẩm nào!')</script>";
+    echo "<script>location.href = 'index.php';</script>";
 }
 ?>
