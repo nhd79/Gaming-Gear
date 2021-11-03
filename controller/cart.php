@@ -22,5 +22,5 @@ if (isset($_REQUEST["added_product_id"])) {
     }
     unset($cart["0"]);
     $_SESSION["cart"] = $cart;
-    echo "<script>location.href = 'index.php';</script>";
+    header('Location: ' . $_SERVER['HTTP_REFERER']); // Go back to previous page
 }
