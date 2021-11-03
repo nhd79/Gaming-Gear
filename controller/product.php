@@ -23,7 +23,7 @@ foreach ($result as $product) {
                 <a href="product.php?category_id=' . $product[0] . '"" class="item-category">' . $product[1] . '</a>
             </div>
             <div class="cart-plus center">
-              <a href="../controller/cart.php?added_product_id=' . $product[2] . '&&category_id=' . $product[0] . '">
+              <a href="../controller/cart-info.php?added_product_id=' . $product[2] . '&&category_id=' . $product[0] . '">
                 <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
             </div>
           </div>

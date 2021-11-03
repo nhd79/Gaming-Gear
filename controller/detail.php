@@ -27,7 +27,7 @@ foreach ($result as $product) {
     echo '<div>' . $product[9] . '</div>';
   echo '
         <div>
-          <a href="../controller/cart.php?added_product_id=' . $product[0] . '&&category_id=' . $product[1] . '" class="add-to-cart-button">Thêm vào giỏ hàng</a>
+          <a href="../controller/cart-info.php?added_product_id=' . $product[0] . '&&category_id=' . $product[1] . '" class="add-to-cart-button">Thêm vào giỏ hàng</a>
         </div>
       </div>';
 }

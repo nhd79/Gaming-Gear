@@ -1,10 +1,6 @@
 <div id="top"></div>
 <?php
-session_start();
-if (isset($_REQUEST["logout"])) {
-    session_destroy();
-    echo "<script>location.href = 'index.php';</script>";
-}
+include_once('../controller/header-session-login.php');
 ?>
 <!-- Header -->
 <header>
@@ -26,22 +22,7 @@ if (isset($_REQUEST["logout"])) {
         </a>
 
         <?php
-        if (isset($_SESSION["cart"])) {
-            $cart = $_SESSION["cart"];
-            if (count($cart) > 0) {
-                $quantity = 0;
-                $total = 0;
-                foreach ($cart as $product) {
-                    $quantity = $quantity + $product[2];
-                    $total += $product[2] * $product[3];
-                }
-                echo '        
-                <div style="padding-left: 20px; font-size: 18px">
-                    <div style="color: crimson">' . $quantity . ' Sản phẩm</div>
-                    <div style="color: white; font-size: larger">' . number_format($total) . ' đ</div>
-                </div>';
-            }
-        }
+        include_once('../controller/header-cart-info.php');
         ?>
 
     </div>

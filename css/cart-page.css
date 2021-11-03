@@ -80,7 +80,7 @@
   border-radius: 5px;
   padding: 10px;
 }
-.checkout-button {
+.update-button {
   font-family: "Roboto", sans-serif;
   border: 1px solid var(--mainColor);
   cursor: pointer;
