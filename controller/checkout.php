@@ -40,9 +40,9 @@ if (isset($_SESSION["cart"])) {
                     unset($_SESSION["cart"]);
                     echo "<script>alert('Đặt hàng thành công!')</script>";
                     echo "<script>location.href = 'index.php';</script>";
-                    /*$msg="Số đơn hàng: ".$order_id."\nNgày đặt hàng: ".$ngayorder."\nMã khách hàng: ".$makh."\nHọ tên khách hàng: ".$hoten."\nĐịa chỉ: ".$diachi."\nSố điện thoại: ".$dienthoai."\n";
-                    $msg= wordwrap($msg,70);
-                    mail("hoangduy791999@gmail.com","Đơn hàng gaming gear số ".$order_id,$msg);*/
+                    // $msg = "Số đơn hàng: " . $order_id . "\nNgày đặt hàng: " . $order_date . "\nMã khách hàng: " . $user_id . "\nHọ tên khách hàng: " . $full_name . "\nĐịa chỉ: " . $address . "\nSố điện thoại: " . $phone . "\n";
+                    // $msg = wordwrap($msg, 70);
+                    // mail("hoangduy791999@gmail.com", "Đơn hàng gaming gear số " . $order_id, $msg);
                 }
             } else {
                 echo "<script>alert('Vui lòng nhập thông tin khách hàng!')</script>";

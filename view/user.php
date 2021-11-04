@@ -33,7 +33,13 @@
     <form method="post" enctype="multipart/form-data" <?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>>
       <div class="profile-picture">
         <div>
-          <img src="/images/<?php echo $image; ?>" alt="User's picture" class="user-img" width="80%" />
+          <img src="
+          <?php
+          $avatar = "../images/" . $image;
+          if (file_exists($avatar))
+            echo $avatar;
+          else echo $image; ?>
+          " alt="User's picture" class="user-img" width="80%" />
         </div>
         <div>
           <label class="img-label">

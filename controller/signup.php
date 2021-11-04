@@ -43,7 +43,8 @@ if (isset($_POST["signup-username"])) {
                 //     . $address . "','" . $phone_number . "','" . $email . "','user.png')";
                 $sql = "insert into customer(user_name,password,full_name,address,phone,email,image)
 			    values(?,?,?,?,?,?,?)";
-                $parameter = array($username, $hashed_password, $full_name, $address, $phone_number, $email, 'user.png');
+                $avatar = 'https://avatars.dicebear.com/api/micah/' . $username . '.svg?mood[]=happy&mouth[]=smile';
+                $parameter = array($username, $hashed_password, $full_name, $address, $phone_number, $email, $avatar);
                 writeDatabase($sql, $parameter);
                 echo "<script>alert('Đăng ký thành công!');</script>";
             } else {
