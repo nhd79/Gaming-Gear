@@ -55,10 +55,10 @@ if (isset($_SESSION["cart"])) {
         echo '      
         <div class="total">Tổng tiền: ' . number_format($total) . ' VND</div>
         <div class="update">
-          <button type="submit" name="update" class="checkout-button">Cập nhật giỏ hàng</button>
+          <button type="submit" name="update" class="update-button">Cập nhật giỏ hàng</button>
         </div>
         <div class="checkout">
-          <a href="checkout.php" class="update-button">Thanh toán</a>
+          <a href="checkout.php" class="checkout-button">Thanh toán</a>
         </div>
       </div>
     </form>';
