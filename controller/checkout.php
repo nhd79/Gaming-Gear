@@ -30,10 +30,13 @@ if (isset($_SESSION["cart"])) {
                 foreach ($result as $order) {
                     $order_id = $order[0];
                     $sql = "insert into order_detail(id,product_id,quantity,price,total) values";
-                    foreach ($cart as $product)
-                        $sql = $sql . "(" . $order_id . "," . $product[0] . "," . $product[2] . "," . $product[3] . "," . ($product[2] * $product[3]) . "),";
-                    $sql = substr($sql, 0, strlen($sql) - 1);
-                    writeDatabase($sql, array());
+                    $parameter = array();
+                    foreach ($cart as $product) {
+                        $sql = $sql . "(?,?,?,?,?),";
+                        array_push($parameter, $order_id, $product[0], $product[2], $product[3], ($product[2] * $product[3]));
+                    }
+                    $sql = substr($sql, 0, strlen($sql) - 1); // Delete the last ',' in sql
+                    writeDatabase($sql, $parameter);
                     unset($_SESSION["cart"]);
                     echo "<script>alert('Đặt hàng thành công!')</script>";
                     echo "<script>location.href = 'index.php';</script>";
