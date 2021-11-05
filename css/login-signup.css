@@ -1,0 +1,108 @@
+.login div,
+.signup div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: 80px 240px 30px 50px;
+  margin: 6vw 35vw 0vw 35vw;
+  box-shadow: 0 0 0 5px hsl(353, 85%, 81%), 0 0 0 10px hsl(353, 85%, 71%),
+    0 0 0 15px hsl(353, 85%, 61%);
+  border-radius: 10px;
+  min-width: 300px;
+}
+.signup {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 400px 50px;
+  margin: 3vw 20vw 5vw 20vw;
+  box-shadow: 0 0 0 5px hsl(353, 85%, 81%), 0 0 0 10px hsl(353, 85%, 71%),
+    0 0 0 15px hsl(353, 85%, 61%);
+  border-radius: 10px;
+  min-width: 300px;
+  /* min-height: 770px; */
+}
+.login > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 80px;
+}
+.signup > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px, 80px;
+}
+.signup > form > .login-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 80px;
+}
+.signup > form > .personal-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 80px;
+}
+.signup > form > .button {
+  grid-column: 1 / 3;
+}
+.login > .text,
+.signup > .text {
+  font-size: 30px;
+}
+.login input,
+.signup input {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  height: 40px;
+  width: 80%;
+  padding-left: 10px;
+  font-size: 17px;
+  outline: none;
+}
+.login input:focus,
+.signup input:focus {
+  border: 2px solid var(--mainColor);
+}
+.login button,
+.signup button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 10px;
+  border: 1px solid var(--mainColor);
+  padding: 10px;
+  height: 45px;
+  width: 80%;
+  font-size: 17px;
+
+  cursor: pointer;
+}
+.signup button {
+  width: 90%;
+}
+.login a,
+.signup a {
+  color: var(--mainColor);
+}
+@media screen and (max-width: 600px) {
+  .login {
+    margin: 6vw 20vw 0vw 20vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  .signup {
+    margin: 5vw 10vw 5vw 10vw;
+  }
+  .signup > form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px, 320px, 80px;
+  }
+  .signup > form > .button {
+    grid-column: 1 / 2;
+  }
+  .signup {
+    grid-template-rows: 80px 640px 50px;
+  }
+}

@@ -7,8 +7,6 @@ if (isset($_POST["username"])) {
     $username = test_input($_POST["username"]);
     $password = test_input($_POST["password"]);
 
-    // $sql = "select * from customer where user_name='" . $username . "'";
-    // $result = readDatabase($sql);
     $sql = "select * from customer where user_name = ?";
     $parameter = array($username);
     $result = readDatabase($sql, $parameter);
@@ -16,6 +14,7 @@ if (isset($_POST["username"])) {
     if (count($result) > 0) {
         foreach ($result as $customer) {
             if (password_verify($password, $customer["password"])) {
+                session_start();
                 $_SESSION["full_name"] = $customer["full_name"];
                 $_SESSION["id"] = $customer["id"];
                 $_SESSION["email"] = $customer["email"];
@@ -23,11 +22,11 @@ if (isset($_POST["username"])) {
                 $_SESSION["address"] = $customer["address"];
                 $_SESSION["image"] = $customer["image"];
                 echo "<script>alert('Đăng nhập thành công!');</script>";
+                echo "<script>location.href = 'index.php';</script>";
             } else {
                 echo "<script>alert('Sai mật khẩu!');</script>";
             }
         }
-        echo "<script>location.href = 'index.php';</script>";
     } else {
         echo "<script>alert('Tài khoản không tồn tại!');</script>";
     }

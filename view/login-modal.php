@@ -14,7 +14,7 @@
   </form>
   <div>
     Chưa có tài khoản?&nbsp;
-    <a href="signup-modal.html" rel="modal:open">Đăng ký tại đây</a>
+    <a href="signup-modal.php" rel="modal:open">Đăng ký tại đây</a>
   </div>
   <!-- <a href="#" rel="modal:close">Close</a> -->
 </div>
