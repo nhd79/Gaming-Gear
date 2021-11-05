@@ -11,6 +11,7 @@ if (isset($_POST["signup-username"])) {
     $email = test_input($_POST["email"]);
     $address = test_input($_POST["address"]);
     $phone_number = test_input($_POST["phone-number"]);
+    $gender = test_input($_POST["gender"]);
 
     if (!preg_match('/^[a-z0-9]{6,20}$/i', $username)) {
         echo "<script>alert('Tên đăng nhập chứa ít nhất 6 ký tự, chỉ chứa chữ cái và số!');</script>";
@@ -38,10 +39,10 @@ if (isset($_POST["signup-username"])) {
         if ($exist != 1) {
             if ($password == $password_repeat) {
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-                $sql = "insert into customer(user_name,password,full_name,address,phone,email,image)
-			    values(?,?,?,?,?,?,?)";
+                $sql = "insert into customer(user_name,password,full_name,address,phone,email,image,gender)
+			    values(?,?,?,?,?,?,?,?)";
                 $avatar = 'https://avatars.dicebear.com/api/micah/' . $username . '.svg?mood[]=happy&mouth[]=smile';
-                $parameter = array($username, $hashed_password, $full_name, $address, $phone_number, $email, $avatar);
+                $parameter = array($username, $hashed_password, $full_name, $address, $phone_number, $email, $avatar, $gender);
                 writeDatabase($sql, $parameter);
                 echo "<script>alert('Đăng ký thành công!');</script>";
                 echo "<script>location.href = 'index.php';</script>";

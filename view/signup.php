@@ -36,11 +36,11 @@
                 <div>
                     <input type="password" name="password-repeat" id="password-repeat" placeholder="Xác nhận mật khẩu..." value="<?php if (isset($password_repeat)) echo $password_repeat; ?>" required />
                 </div>
-            </div>
-            <div class="personal-info">
                 <div>
                     <input type="text" name="email" id="email" placeholder="Email..." value="<?php if (isset($email)) echo $email; ?>" required />
                 </div>
+            </div>
+            <div class="personal-info">
                 <div>
                     <input type="text" name="fullname" id="fullname" placeholder="Họ tên..." value="<?php if (isset($full_name)) echo $full_name; ?>" />
                 </div>
@@ -49,6 +49,11 @@
                 </div>
                 <div class="phone">
                     <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại..." value="<?php if (isset($phone_number)) echo $phone_number; ?>" />
+                </div>
+                <div class="gender">
+                    <label for="gender">Giới tính:</label>
+                    <input type="radio" id="male" name="gender" value="1">Nam
+                    <input type="radio" id="female" name="gender" value="2">Nữ
                 </div>
             </div>
             <div class="button">

@@ -86,6 +86,23 @@
 .signup a {
   color: var(--mainColor);
 }
+.signup > form > .personal-info > .gender {
+  border: 1px solid var(--mainColor);
+  font-size: 17px;
+  width: 70%;
+  padding-left: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup > form > .personal-info > .gender input {
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 600px) {
   .login {
     margin: 6vw 20vw 0vw 20vw;
