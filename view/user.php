@@ -67,16 +67,16 @@
       <div class="customer-information">
         <div class="text">Thông tin khách hàng</div>
         <div>
-          <input type="text" name="name" id="name" placeholder="Họ và tên" value="<?php echo $full_name; ?>" />
+          <input type="text" name="name" id="name" placeholder="Họ và tên" value="<?php if (isset($full_name)) echo $full_name; ?>" />
         </div>
         <div>
-          <input type="text" name="address" id="address" placeholder="Địa chỉ" value="<?php echo $address; ?>" />
+          <input type="text" name="address" id="address" placeholder="Địa chỉ" value="<?php if (isset($address)) echo $address; ?>" />
         </div>
         <div>
-          <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại" value="<?php echo $phone; ?>" />
+          <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại" value="<?php if (isset($phone)) echo $phone; ?>" />
         </div>
         <div>
-          <input type="text" name="email" id="email" placeholder="Email" value="<?php echo $email; ?>" />
+          <input type="text" name="email" id="email" placeholder="Email" value="<?php if (isset($email)) echo $email; ?>" />
         </div>
 
         <div>
