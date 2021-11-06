@@ -41,7 +41,10 @@ if (isset($_POST["signup-username"])) {
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
                 $sql = "insert into customer(user_name,password,full_name,address,phone,email,image,gender)
 			    values(?,?,?,?,?,?,?,?)";
-                $avatar = 'https://avatars.dicebear.com/api/micah/' . $username . '.svg?mood[]=happy&mouth[]=smile';
+                if ($gender == "1") {
+                    $avatar = 'https://avatars.dicebear.com/api/micah/' . $username . '.svg?mood[]=happy&mouth[]=smile&eyebrows[]=up&earringsProbability[]=0&hair[]=fonze';
+                } else
+                    $avatar = 'https://avatars.dicebear.com/api/micah/' . $username . '.svg?mood[]=happy&mouth[]=smile&eyebrows[]=eyelashesUp&earrings[]=stud&hair[]=full';
                 $parameter = array($username, $hashed_password, $full_name, $address, $phone_number, $email, $avatar, $gender);
                 writeDatabase($sql, $parameter);
                 echo "<script>alert('Đăng ký thành công!');</script>";

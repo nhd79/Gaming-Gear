@@ -55,7 +55,7 @@
                         <label for="gender">Giới tính:</label>
                     </div>
                     <div>
-                        <input type="radio" id="male" name="gender" value="1">&nbsp;&nbsp;Nam
+                        <input type="radio" id="male" name="gender" value="1" checked="checked">&nbsp;&nbsp;Nam
                     </div>
                     <div>
                         <input type="radio" id="female" name="gender" value="2">&nbsp;&nbsp;Nữ
