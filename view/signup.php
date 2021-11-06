@@ -51,9 +51,15 @@
                     <input type="text" name="phone-number" id="phone-number" placeholder="Số điện thoại..." value="<?php if (isset($phone_number)) echo $phone_number; ?>" />
                 </div>
                 <div class="gender">
-                    <label for="gender">Giới tính:</label>
-                    <input type="radio" id="male" name="gender" value="1">Nam
-                    <input type="radio" id="female" name="gender" value="2">Nữ
+                    <div>
+                        <label for="gender">Giới tính:</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="1">&nbsp;&nbsp;Nam
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="2">&nbsp;&nbsp;Nữ
+                    </div>
                 </div>
             </div>
             <div class="button">

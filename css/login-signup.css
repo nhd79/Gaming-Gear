@@ -86,7 +86,7 @@
 .signup a {
   color: var(--mainColor);
 }
-.signup > form > .personal-info > .gender {
+/* .signup > form > .personal-info > .gender {
   border: 1px solid var(--mainColor);
   font-size: 17px;
   width: 70%;
@@ -102,6 +102,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+.signup > form > .personal-info > .gender {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 17px;
+  width: 70%;
+  min-width: 210px;
+}
+.signup > form > .personal-info > .gender input {
+  height: 20px;
+  width: 20px;
+  background-color: var(--mainColor);
+  color: var(--mainColor);
+}
+.signup > form > .personal-info > .gender input:checked {
+  background-color: var(--mainColor);
+  color: var(--mainColor);
 }
 @media screen and (max-width: 600px) {
   .login {
@@ -114,12 +134,12 @@
   }
   .signup > form {
     grid-template-columns: 1fr;
-    grid-template-rows: 240px, 320px, 80px;
+    grid-template-rows: 240px, 400px, 80px;
   }
   .signup > form > .button {
     grid-column: 1 / 2;
   }
   .signup {
-    grid-template-rows: 80px 640px 50px;
+    grid-template-rows: 80px 720px 50px;
   }
 }
