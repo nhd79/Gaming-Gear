@@ -75,6 +75,7 @@ body {
 }
 .navigation ul li a .icon ion-icon {
   font-size: 1.75em;
+  padding-top: 16px;
 }
 .navigation ul li a .title {
   position: relative;
