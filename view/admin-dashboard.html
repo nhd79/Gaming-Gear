@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/dashboard-styles.css" />
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -12,17 +12,19 @@
       <div class="navigation">
         <ul>
           <li>
-            <a href="#">
-              <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
-              <span class="title">Brand Name</span>
+            <a href="/">
+              <span class="logo"
+                ><img src="/images/logo4.png" alt="Website's Logo" height="45"
+              /></span>
+              <span class="title">Gaming Gear</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <span class="icon"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
-              <span class="title">Dashboard</span>
+              <span class="title">Bảng điều khiển</span>
             </a>
           </li>
           <li>
@@ -30,23 +32,23 @@
               <span class="icon"
                 ><ion-icon name="person-outline"></ion-icon
               ></span>
-              <span class="title">Customers</span>
+              <span class="title">Khách hàng</span>
             </a>
           </li>
           <li>
             <a href="#">
               <span class="icon"
-                ><ion-icon name="chatbubble-outline"></ion-icon
+                ><ion-icon name="receipt-outline"></ion-icon
               ></span>
-              <span class="title">Message</span>
+              <span class="title">Đơn hàng</span>
             </a>
           </li>
           <li>
             <a href="#">
               <span class="icon"
-                ><ion-icon name="help-outline"></ion-icon
+                ><ion-icon name="cube-outline"></ion-icon
               ></span>
-              <span class="title">Help</span>
+              <span class="title">Sản phẩm</span>
             </a>
           </li>
           <li>
@@ -54,7 +56,7 @@
               <span class="icon"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
-              <span class="title">Settings</span>
+              <span class="title">Cài đặt</span>
             </a>
           </li>
           <li>
@@ -62,15 +64,15 @@
               <span class="icon"
                 ><ion-icon name="lock-closed-outline"></ion-icon
               ></span>
-              <span class="title">Password</span>
+              <span class="title">Mật khẩu</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.php?logout=1">
               <span class="icon"
                 ><ion-icon name="log-out-outline"></ion-icon
               ></span>
-              <span class="title">Sign Out</span>
+              <span class="title">Đăng xuất</span>
             </a>
           </li>
         </ul>
@@ -85,13 +87,13 @@
           <!-- search -->
           <div class="search">
             <label>
-              <input type="text" placeholder="Search here" />
+              <input type="text" placeholder="Tìm kiếm..." />
               <ion-icon name="search-outline"></ion-icon>
             </label>
           </div>
           <!-- user img -->
           <div class="user">
-            <img src="images/user.jpg" alt="" />
+            <img src="/images/user.jpg" alt="" />
           </div>
         </div>
 
@@ -99,8 +101,8 @@
         <div class="cardBox">
           <div class="card">
             <div>
-              <div class="numbers">1,504</div>
-              <div class="cardName">Daily Views</div>
+              <div class="numbers">1,000</div>
+              <div class="cardName">Lượt truy cập trong ngày</div>
             </div>
             <div class="iconBx">
               <ion-icon name="eye-outline"></ion-icon>
@@ -109,7 +111,7 @@
           <div class="card">
             <div>
               <div class="numbers">80</div>
-              <div class="cardName">Sales</div>
+              <div class="cardName">Đơn hàng</div>
             </div>
             <div class="iconBx">
               <ion-icon name="cart-outline"></ion-icon>
@@ -117,17 +119,17 @@
           </div>
           <div class="card">
             <div>
-              <div class="numbers">284</div>
-              <div class="cardName">Comments</div>
+              <div class="numbers">20</div>
+              <div class="cardName">Khách hàng mới</div>
             </div>
             <div class="iconBx">
-              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <ion-icon name="person-add-outline"></ion-icon>
             </div>
           </div>
           <div class="card">
             <div>
               <div class="numbers">$7,842</div>
-              <div class="cardName">Earnings</div>
+              <div class="cardName">Số tiền kiếm được</div>
             </div>
             <div class="iconBx">
               <ion-icon name="cash-outline"></ion-icon>
@@ -139,84 +141,84 @@
           <!-- order details list -->
           <div class="recentOrders">
             <div class="cardHeader">
-              <h2>Recent Order</h2>
-              <a href="#" class="btn">View All</a>
+              <h2>Đơn hàng gần đây</h2>
+              <a href="#" class="btn">Xem tất cả</a>
             </div>
             <table>
               <thead>
                 <tr>
-                  <td>Name</td>
-                  <td>Price</td>
-                  <td>Payment</td>
-                  <td>Status</td>
+                  <td>Tên</td>
+                  <td>Giá</td>
+                  <td>Hình thức thanh toán</td>
+                  <td>Trạng thái</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Star Refrigerator</td>
                   <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status delivered">Delivered</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status delivered">Đã giao hàng</span></td>
                 </tr>
                 <tr>
                   <td>Window Coolers</td>
                   <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status pending">Pending</span></td>
+                  <td>COD</td>
+                  <td><span class="status pending">Đang xử lý</span></td>
                 </tr>
                 <tr>
                   <td>Speakers</td>
                   <td>$620</td>
-                  <td>Paid</td>
-                  <td><span class="status return">Return</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status return">Trả hàng</span></td>
                 </tr>
                 <tr>
                   <td>HP Laptop</td>
                   <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status inprogress">In Progress</span></td>
+                  <td>COD</td>
+                  <td><span class="status inprogress">Đang giao hàng</span></td>
                 </tr>
                 <tr>
                   <td>Apple Watch</td>
                   <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status delivered">Delivered</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status delivered">Đã giao hàng</span></td>
                 </tr>
                 <tr>
                   <td>Wall Fan</td>
                   <td>$110</td>
-                  <td>Paid</td>
-                  <td><span class="status pending">Pending</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status pending">Đang xử lý</span></td>
                 </tr>
                 <tr>
                   <td>Adidas Shoes</td>
                   <td>$620</td>
-                  <td>Paid</td>
-                  <td><span class="status return">Return</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status return">Trả hàng</span></td>
                 </tr>
                 <tr>
                   <td>Denim Shirts</td>
                   <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status inprogress">In progress</span></td>
+                  <td>COD</td>
+                  <td><span class="status inprogress">Đang giao hàng</span></td>
                 </tr>
                 <tr>
                   <td>Casual Shoes</td>
                   <td>$575</td>
-                  <td>Paid</td>
-                  <td><span class="status pending">Pending</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status pending">Đang xử lý</span></td>
                 </tr>
                 <tr>
                   <td>Wall Fan</td>
                   <td>$110</td>
-                  <td>Paid</td>
-                  <td><span class="status pending">Pending</span></td>
+                  <td>Online Banking</td>
+                  <td><span class="status pending">Đang xử lý</span></td>
                 </tr>
                 <tr>
                   <td>Denim Shirts</td>
                   <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status inprogress">In progress</span></td>
+                  <td>COD</td>
+                  <td><span class="status inprogress">Đang giao hàng</span></td>
                 </tr>
               </tbody>
             </table>
@@ -225,12 +227,12 @@
           <!-- New Customers -->
           <div class="recentCustomers">
             <div class="cardHeader">
-              <h2>Recent Customers</h2>
+              <h2>Khách hàng gần đây</h2>
             </div>
             <table>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img1.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img1.jpg" /></div>
                 </td>
                 <td>
                   <h4>David<br /><span>Italy</span></h4>
@@ -238,7 +240,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img2.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img2.jpg" /></div>
                 </td>
                 <td>
                   <h4>Muhammad<br /><span>India</span></h4>
@@ -246,7 +248,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img3.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img3.jpg" /></div>
                 </td>
                 <td>
                   <h4>Amelia<br /><span>France</span></h4>
@@ -254,7 +256,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img4.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img4.jpg" /></div>
                 </td>
                 <td>
                   <h4>Olivia<br /><span>USA</span></h4>
@@ -262,7 +264,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img5.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img5.jpg" /></div>
                 </td>
                 <td>
                   <h4>Amit<br /><span>Japan</span></h4>
@@ -270,7 +272,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img6.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img6.jpg" /></div>
                 </td>
                 <td>
                   <h4>Ashraf<br /><span>India</span></h4>
@@ -278,7 +280,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img7.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img7.jpg" /></div>
                 </td>
                 <td>
                   <h4>Diana<br /><span>Malaysia</span></h4>
@@ -286,7 +288,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img8.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img8.jpg" /></div>
                 </td>
                 <td>
                   <h4>Amit<br /><span>India</span></h4>
@@ -294,7 +296,7 @@
               </tr>
               <tr>
                 <td width="60px">
-                  <div class="imgBx"><img src="images/img9.jpg" /></div>
+                  <div class="imgBx"><img src="/images/img9.jpg" /></div>
                 </td>
                 <td>
                   <h4>Huong<br /><span>Viet Nam</span></h4>
