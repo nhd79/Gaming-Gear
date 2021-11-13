@@ -128,7 +128,7 @@
           </div>
           <div class="card">
             <div>
-              <div class="numbers">$7,842</div>
+              <div class="numbers">$3,000</div>
               <div class="cardName">Số tiền kiếm được</div>
             </div>
             <div class="iconBx">
@@ -335,5 +335,19 @@
       }
       list.forEach((item) => item.addEventListener("mouseover", activeLink));
     </script>
+
+    <!-- Change color -->
+    <script>
+      // Get the root element
+      var r = document.querySelector(":root");
+
+      // Create a function for setting a variable value
+      function changeColor(value) {
+        // Set the value of variable --blue to another value (in this case "lightblue")
+        r.style.setProperty("--mainColor", value);
+      }
+    </script>
+    <button class="red" onclick="changeColor('#ec1933')"></button>
+    <button class="blue" onclick="changeColor('#287bff')"></button>
   </body>
 </html>
