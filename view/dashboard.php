@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (isset($_REQUEST["logout"])) {
-  session_destroy();
-  echo "<script>location.href = 'index.php';</script>";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,112 +8,19 @@ if (isset($_REQUEST["logout"])) {
   <link rel="stylesheet" href="/css/dashboard-styles.css" />
   <title>Admin Dashboard</title>
 
-  <!-- Change color -->
-  <script>
-    var r = document.querySelector(":root");
-    var color = '';
-
-    function changeColor(value) {
-      r.style.setProperty("--mainColor", value);
-      color = value;
-      // console.log(color);
-    }
-
-    function setColor() {
-      console.log(color);
-
-      r.style.setProperty("--mainColor", color);
-    }
-  </script>
 </head>
 
 <body onload="setColor()">
   <div class="container">
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="/">
-            <span class="logo"><img src="/images/logo4.png" alt="Website's Logo" height="45" /></span>
-            <span class="title">Gaming Gear</span>
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <span class="icon">
-              <ion-icon name="home-outline"></ion-icon>
-            </span>
-            <span class="title">Bảng điều khiển</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="person-outline"></ion-icon>
-            </span>
-            <span class="title">Khách hàng</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="receipt-outline"></ion-icon>
-            </span>
-            <span class="title">Đơn hàng</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="cube-outline"></ion-icon>
-            </span>
-            <span class="title">Sản phẩm</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="settings-outline"></ion-icon>
-            </span>
-            <span class="title">Cài đặt</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="lock-closed-outline"></ion-icon>
-            </span>
-            <span class="title">Mật khẩu</span>
-          </a>
-        </li>
-        <li>
-          <a href="admin-dashboard.php?logout=1">
-            <span class="icon">
-              <ion-icon name="log-out-outline"></ion-icon>
-            </span>
-            <span class="title">Đăng xuất</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <?php
+    include_once("dashboard-navigation.php");
+    ?>
 
     <!-- Main -->
     <div class="main">
-      <div class="topbar">
-        <div class="toggle">
-          <ion-icon name="menu-outline"></ion-icon>
-        </div>
-        <!-- search -->
-        <div class="search">
-          <label>
-            <input type="text" placeholder="Tìm kiếm..." />
-            <ion-icon name="search-outline"></ion-icon>
-          </label>
-        </div>
-        <!-- user img -->
-        <div class="user">
-          <img src="/images/user.jpg" alt="" />
-        </div>
-      </div>
+      <?php
+      include_once("dashboard-topbar.php");
+      ?>
 
       <!-- cards -->
       <div class="cardBox">
