@@ -43,7 +43,7 @@ include_once("../model/db.php");
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="dashboard-customer.php">
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
@@ -51,7 +51,7 @@ include_once("../model/db.php");
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="dashboard-order.php">
                     <span class="icon">
                         <ion-icon name="receipt-outline"></ion-icon>
                     </span>
