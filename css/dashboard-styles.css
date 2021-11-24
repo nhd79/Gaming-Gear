@@ -399,6 +399,39 @@ body {
   cursor: pointer;
 }
 
+/* Product Page */
+.product-list {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-gap: 30px;
+}
+.product-list .product {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.product-list .product div {
+  display: flex;
+  justify-content: center;
+}
+.product-list .product:hover {
+  background: var(--mainColor);
+  color: var(--white);
+}
+.product-list .product:hover .product::after {
+  content: "";
+}
+
 /* Responsive */
 @media (max-width: 1000px) {
   .navigation {
