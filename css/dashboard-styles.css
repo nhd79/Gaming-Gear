@@ -423,6 +423,13 @@ body {
 .product-list .product div {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.product-list .product .description {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px;
 }
 .product-list .product:hover {
   background: var(--mainColor);
@@ -431,7 +438,24 @@ body {
 .product-list .product:hover .product::after {
   content: "";
 }
-
+.product-list .add {
+  background: var(--mainColor);
+  color: var(--white);
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  text-decoration: none;
+}
+.product-list .add ion-icon {
+  font-size: 2em;
+}
+.item-img {
+  max-width: 150px;
+  max-height: 100px;
+}
 /* Responsive */
 @media (max-width: 1000px) {
   .navigation {

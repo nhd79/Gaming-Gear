@@ -42,8 +42,10 @@
       </div>
       <div class="product-list">
         <div class="product">
-          <div>
-            <div class="">Image</div>
+          <div class="">
+            <a href="">
+              <img src="/images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
+            </a>
           </div>
           <div>
             <div class="">Bàn phím</div>
@@ -55,9 +57,21 @@
             <div class="">490000 VND</div>
           </div>
           <div>
-            <div class="">Description</div>
+            <div class="description">
+              <div>Description</div>
+              <div>Description</div>
+              <div>Description</div>
+              <div>Description</div>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="product-list">
+        <a href="" class="add">
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <div>Thêm sản phẩm</div>
+        </a>
       </div>
 
 
