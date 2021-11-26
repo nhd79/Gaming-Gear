@@ -489,10 +489,12 @@ body {
 }
 .insert-product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 200px 300px;
   grid-template-rows: repeat(11, 1fr);
   width: 70%;
-  border: 1px solid var(--mainColor);
+  row-gap: 15px;
+  font-size: 17px;
+  padding-bottom: 50px;
 }
 .insert-product-grid div {
   display: flex;
@@ -504,8 +506,57 @@ body {
 .submit {
   grid-column: 1/3;
 }
+.submit button {
+  font-size: 17px;
+}
 .header {
   color: var(--mainColor);
+}
+.insert-product-grid input,
+.insert-product-grid select {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+}
+.order-button {
+  color: white;
+  background-color: var(--mainColor);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--mainColor);
+  cursor: pointer;
+  font-size: 15px;
+}
+.insert-product-grid div:nth-child(2n):not(.product-img) {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+.img-label {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+.img-label::after {
+  content: "Tải lên";
+  color: white;
+  background: var(--mainColor);
+  z-index: 2;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px 10px 12px 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.img-input {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
 }
 /* Responsive */
 @media (max-width: 1000px) {
