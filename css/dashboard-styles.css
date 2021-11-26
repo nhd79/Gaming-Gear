@@ -435,6 +435,7 @@ body {
 .product-list .product .description div {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .product-list .product:hover {
   background: var(--mainColor);
