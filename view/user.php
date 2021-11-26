@@ -55,7 +55,7 @@
             });
           </script>
         </div>
-        <div class="col-lg-11">
+        <div>
           <button type="submit" name="submit" class="change-picture-button">
             Đổi ảnh đại diện
           </button>
