@@ -27,9 +27,6 @@
             <div class="">Image</div>
           </div>
           <div>
-            <div class="">Bàn phím</div>
-          </div>
-          <div>
             <div class="">Bàn phím Rapoo V500L Rainbow</div>
           </div>
           <div>
@@ -47,22 +44,21 @@
               <img src="/images/AKKO 3087 Dragon Ball Z – Goku.jpg" alt="banphim" class="item-img" />
             </a>
           </div>
-          <div>
-            <div class="">Bàn phím</div>
+          <div class="">Bàn phím Rapoo V500L Rainbow</div>
+          <div class="">490000 VND</div>
+          <div class="description">
+            <div>Nhà Sản Xuất : Rapoo</div>
+            <div>Tình Trạng : Mới 100% - Fullbox</div>
+            <div>Bảo Hành : 24 tháng</div>
+            <div>Switch : Rapoo Blue/ Red</div>
           </div>
-          <div>
-            <div class="">Bàn phím Rapoo V500L Rainbow</div>
-          </div>
-          <div>
-            <div class="">490000 VND</div>
-          </div>
-          <div>
-            <div class="description">
-              <div>Description</div>
-              <div>Description</div>
-              <div>Description</div>
-              <div>Description</div>
-            </div>
+          <div class="button">
+            <a href="">
+              <ion-icon name="pencil-outline"></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon name="trash-outline"></ion-icon>
+            </a>
           </div>
         </div>
       </div>
@@ -73,7 +69,6 @@
           <div>Thêm sản phẩm</div>
         </a>
       </div>
-
 
 
     </div>
