@@ -21,9 +21,65 @@
             include_once("dashboard-topbar.php");
             ?>
 
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
+                <div class="insert-product-grid">
+                    <div class="header">
+                        <h2>Thêm sản phẩm</h2>
+                    </div>
+                    <div>
+                        Tên sản phẩm:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Loại sản phẩm:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Đơn giá:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Mô tả:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Mô tả 2:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Mô tả 3:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Mô tả 4:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div>
+                        Mô tả 5:
+                    </div>
+                    <div>
+                        <input type="text" name="" />
+                    </div>
+                    <div class="product-img">IMG</div>
+                    <div class="submit">Submit Button</div>
+                </div>
+            </form>
 
         </div>
-    </div>
     </div>
     </div>
 
