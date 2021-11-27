@@ -24,10 +24,10 @@ foreach ($result as $product) {
   echo '
       </div>
       <div class="button">
-        <a href="edit.php?product_id=' . $product[0] . '">
+        <a href="../controller/update-product.php?product_id=' . $product[0] . '">
           <ion-icon name="pencil-outline"></ion-icon>
         </a>
-        <a href="delete.php?product_id=' . $product[0] . '">
+        <a href="../controller/delete-product.php?product_id=' . $product[0] . '">
           <ion-icon name="trash-outline"></ion-icon>
         </a>
       </div>
