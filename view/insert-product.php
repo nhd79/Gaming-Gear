@@ -29,7 +29,7 @@
             include_once("dashboard-topbar.php");
             ?>
 
-            <form method="post" action="">
+            <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                 <div class="insert-product-grid">
                     <div class="header">
                         <h2>Thêm sản phẩm</h2>
@@ -89,10 +89,9 @@
                     <div>
                         <input type="text" name="description_5" id="description_5" />
                     </div>
-                    <!-- <div class="product-img">IMG</div> -->
                     <div class="product-img">
                         <label class="img-label">
-                            <input type="file" name="file" class="img-input" required />
+                            <input type="file" name="file" id="file" class="img-input" />
                             <span class="text">Chọn ảnh sản phẩm&ensp;</span></label>
                         <script>
                             //Name appear
@@ -105,13 +104,15 @@
                         </script>
                     </div>
                     <div class="submit">
-                        <button type="submit" class="order-button">
+                        <button type="submit" name="submit" class="order-button">
                             Thêm sản phẩm mới
                         </button>
                     </div>
                 </div>
             </form>
-
+            <?php
+            include_once("../controller/insert-product.php");
+            ?>
         </div>
     </div>
     </div>
