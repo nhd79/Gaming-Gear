@@ -24,7 +24,7 @@ foreach ($result as $product) {
   echo '
       </div>
       <div class="button">
-        <a href="../controller/update-product.php?product_id=' . $product[0] . '">
+        <a href="../view/update-product.php?product_id=' . $product[0] . '">
           <ion-icon name="pencil-outline"></ion-icon>
         </a>
         <a href="../controller/delete-product.php?product_id=' . $product[0] . '">

@@ -29,7 +29,7 @@
             include_once("dashboard-topbar.php");
             ?>
 
-            <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
+            <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class="insert-product-form">
                 <div class="insert-product-grid">
                     <div class="header">
                         <h2>Thêm sản phẩm</h2>
