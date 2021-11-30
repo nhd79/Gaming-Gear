@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/dashboard-styles.css" />
 
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
   <title>Admin Dashboard</title>
 </head>
 
@@ -26,7 +33,15 @@
       <?php
       include_once("../controller/update-product.php")
       ?>
-
+      <script>
+        //Name appear
+        $(".img-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this)
+            .siblings(".text")
+            .html(fileName + "&ensp;");
+        });
+      </script>
 
     </div>
   </div>
