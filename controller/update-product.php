@@ -96,6 +96,7 @@ foreach ($result as $product) {
           </button>
       </div>
   </div>
+  <input type="hidden" id="product_id" name="product_id" value="' . $product_id . '">
 </form>
       ';
 }
@@ -110,6 +111,7 @@ if (isset($_POST["submit"])) {
     $description_3 = test_input($_POST["description_3"]);
     $description_4 = test_input($_POST["description_4"]);
     $description_5 = test_input($_POST["description_5"]);
+    $product_id = test_input($_POST["product_id"]);
 
     // File upload path
     $targetDir = "../images/";
@@ -129,6 +131,7 @@ if (isset($_POST["submit"])) {
                     writeDatabase($sql, $parameter);
 
                     echo "<script>alert('Sửa thông tin sản phẩm thành công!');</script>";
+                    echo "<script>location.href = '../view/update-product.php?product_id=" . $product_id . "';</script>";
                 } else
                     echo "<script>alert('Đã có lỗi xảy ra!');</script>";
             } else
@@ -141,5 +144,6 @@ if (isset($_POST["submit"])) {
         writeDatabase($sql, $parameter);
 
         echo "<script>alert('Sửa thông tin sản phẩm thành công!');</script>";
+        echo "<script>location.href = '../view/update-product.php?product_id=" . $product_id . "';</script>";
     }
 }
