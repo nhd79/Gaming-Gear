@@ -37,7 +37,7 @@ else
         </div>
         <div class="center">
         <a href="detail.php?product_id=' . $product[2] . '">
-            <img src="/images/' . $product[5] . '" alt="banphim" class="item-img" />
+            <img src="/images/' . $product[5] . '" alt="Product Image" class="item-img" />
         </a>
         </div>
         <div class="item-name center">

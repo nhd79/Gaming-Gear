@@ -9,7 +9,7 @@ foreach ($result as $product) {
     <div class="product">
       <div class="">
         <a href="">
-          <img src="/images/' . $product[1] . '" alt="banphim" class="item-img" />
+          <img src="/images/' . $product[1] . '" alt="Product Image" class="item-img" />
         </a>
       </div>
       <div class="">' . $product[2] . '</div>

@@ -5,7 +5,7 @@ if (isset($_SESSION["cart"])) {
     foreach ($cart as $product) {
         echo '      
         <div>
-            <img src="/images/' . $product[4] . '" alt="banphim" class="cart-item-img" />
+            <img src="/images/' . $product[4] . '" alt="Product Image" class="cart-item-img" />
             <div class="quantity">' . $product[2] . '</div>
         </div>
         <div>' . $product[1] . '</div>

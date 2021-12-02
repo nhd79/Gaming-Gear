@@ -13,7 +13,7 @@ foreach ($result as $product) {
   echo '
       <div class="product">
         <div>
-          <img src="/images/' . $product[4] . '" alt="banphim" class="product-img" />
+          <img src="/images/' . $product[4] . '" alt="Product Image" class="product-img" />
         </div>
         <div class="product-name">' . $product[2] . '</div>
         <div class="product-price">' . number_format($product[3]) . ' VND</div>

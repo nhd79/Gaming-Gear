@@ -16,7 +16,7 @@ foreach ($result as $product) {
     echo '">
   <div class="update-product-grid">
       <div class="product-image" >
-        <img src="/images/' . $product[4] . '" alt="banphim" />
+        <img src="/images/' . $product[4] . '" alt="Product Image" />
       </div>
       <div>
           Tên sản phẩm:
