@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/dashboard-styles.css" />
+  <link rel="stylesheet" href="/css/dashboard-order.css" />
+
   <title>Admin Dashboard</title>
 </head>
 
@@ -21,89 +23,27 @@
       include_once("dashboard-topbar.php");
       ?>
 
-      <div class="details">
+      <div class="order-details">
         <!-- order details list -->
         <div class="recentOrders">
           <div class="cardHeader">
-            <h2>Đơn hàng gần đây</h2>
-            <a href="#" class="btn">Xem tất cả</a>
+            <h2>Đơn hàng</h2>
           </div>
           <table>
             <thead>
               <tr>
-                <td>Tên</td>
-                <td>Giá</td>
+                <td>ID</td>
+                <td>Ngày đặt hàng</td>
+                <td>Tên khách hàng</td>
                 <td>Hình thức thanh toán</td>
+                <td>Tổng tiền</td>
                 <td>Trạng thái</td>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Star Refrigerator</td>
-                <td>$1200</td>
-                <td>Online Banking</td>
-                <td><span class="status delivered">Đã giao hàng</span></td>
-              </tr>
-              <tr>
-                <td>Window Coolers</td>
-                <td>$110</td>
-                <td>COD</td>
-                <td><span class="status pending">Đang xử lý</span></td>
-              </tr>
-              <tr>
-                <td>Speakers</td>
-                <td>$620</td>
-                <td>Online Banking</td>
-                <td><span class="status return">Trả hàng</span></td>
-              </tr>
-              <tr>
-                <td>HP Laptop</td>
-                <td>$110</td>
-                <td>COD</td>
-                <td><span class="status inprogress">Đang giao hàng</span></td>
-              </tr>
-              <tr>
-                <td>Apple Watch</td>
-                <td>$1200</td>
-                <td>Online Banking</td>
-                <td><span class="status delivered">Đã giao hàng</span></td>
-              </tr>
-              <tr>
-                <td>Wall Fan</td>
-                <td>$110</td>
-                <td>Online Banking</td>
-                <td><span class="status pending">Đang xử lý</span></td>
-              </tr>
-              <tr>
-                <td>Adidas Shoes</td>
-                <td>$620</td>
-                <td>Online Banking</td>
-                <td><span class="status return">Trả hàng</span></td>
-              </tr>
-              <tr>
-                <td>Denim Shirts</td>
-                <td>$110</td>
-                <td>COD</td>
-                <td><span class="status inprogress">Đang giao hàng</span></td>
-              </tr>
-              <tr>
-                <td>Casual Shoes</td>
-                <td>$575</td>
-                <td>Online Banking</td>
-                <td><span class="status pending">Đang xử lý</span></td>
-              </tr>
-              <tr>
-                <td>Wall Fan</td>
-                <td>$110</td>
-                <td>Online Banking</td>
-                <td><span class="status pending">Đang xử lý</span></td>
-              </tr>
-              <tr>
-                <td>Denim Shirts</td>
-                <td>$110</td>
-                <td>COD</td>
-                <td><span class="status inprogress">Đang giao hàng</span></td>
-              </tr>
+              <?php
+              include_once("../controller/dashboard-order.php");
+              ?>
             </tbody>
           </table>
         </div>
