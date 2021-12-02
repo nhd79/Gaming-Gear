@@ -18,7 +18,7 @@ include_once('../controller/header-session-login.php');
     </div>
     <div>
         <a href="cart.php" class="cart center">
-            <img src="/images/icon-shopping-cart-2.png" class="cart-icon" />
+            <img src="/images/icon-shopping-cart-2.png" class="cart-icon" alt="Cart Button" />
         </a>
 
         <?php

@@ -31,17 +31,17 @@
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img src="/images/slide4.jpg" width="100%" loading="lazy" />
+      <img src="/images/slide4.jpg" width="100%" loading="lazy" alt="slideshows" />
       <div class="slide-text">Epic Gear</div>
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="/images/slide4.jpg" width="100%" loading="lazy" />
+      <img src="/images/slide4.jpg" width="100%" loading="lazy" alt="slideshows" />
       <div class="slide-text">Epic Gear</div>
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="/images/slide4.jpg" width="100%" loading="lazy" />
+      <img src="/images/slide4.jpg" width="100%" loading="lazy" alt="slideshows" />
       <div class="slide-text">Epic Gear</div>
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>

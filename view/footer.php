@@ -31,26 +31,26 @@
             </ul>
         </div>
         <div class="footer-news">
-            <div>Đăng ký để nhận thông báo qua email</div>
+            <div><label for="subscribe-email">Đăng ký để nhận thông báo qua email</label></div>
             <div>
                 <form method="post" action="subscribe.php">
-                    <input type="text" name="" id="" size="20" />
+                    <input type="text" name="subscribe-email" id="subscribe-email" size="20" />
                     <button type="submit">Đăng ký</button>
                 </form>
             </div>
             <div>Liên lạc với chúng tôi</div>
             <div>
-                <img src="/images/icon-phone.png" class="phone-icon" />+84 703 802
+                <img src="/images/icon-phone.png" class="phone-icon" alt="Phone Icon" />+84 703 802
                 199
             </div>
             <div>
-                <img src="/images/icon-email.png" class="email-icon" />hoangduy791999@gmail.com
+                <img src="/images/icon-email.png" class="email-icon" alt="Email Icon" />hoangduy791999@gmail.com
             </div>
             <div>© 2021. All rights reserved.</div>
         </div>
     </div>
 </footer>
 <div id="scroll-button" class="to-top-button">
-    <a href="#top"><img src="/images/up-arrow.png" class="up-icon" /></a>
+    <a href="#top"><img src="/images/up-arrow.png" class="up-icon" alt="Jump to top button" /></a>
 </div>
 <script src="/js/scroll-button.js"></script>

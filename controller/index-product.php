@@ -14,7 +14,7 @@ foreach ($result as $product) {
         </div>
         <div class="cart-plus center">
           <a href="../controller/cart-info.php?added_product_id=' . $product[2] . '&&category_id=' . $product[0] . '">
-              <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" /></a>
+              <img src="/images/icon-shopping-cart-plus.png" class="cart-plus-icon" alt="Add to cart button"/></a>
         </div>
       </div>
       <div class="center">
