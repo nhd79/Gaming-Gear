@@ -42,14 +42,14 @@ include_once("../model/db.php");
                     <span class="title">Bảng điều khiển</span>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="dashboard-customer.php">
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
                     <span class="title">Khách hàng</span>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="dashboard-order.php">
                     <span class="icon">
@@ -66,14 +66,14 @@ include_once("../model/db.php");
                     <span class="title">Sản phẩm</span>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="settings-outline"></ion-icon>
                     </span>
                     <span class="title">Cài đặt</span>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="#">
                     <span class="icon">
