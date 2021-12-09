@@ -75,7 +75,7 @@ include_once("../model/db.php");
                 </a>
             </li> -->
             <li>
-                <a href="#">
+                <a href="dashboard-password.php">
                     <span class="icon">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
