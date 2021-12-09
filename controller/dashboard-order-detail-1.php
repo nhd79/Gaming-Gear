@@ -1,18 +1,18 @@
 <?php
-$sql = 'SELECT `order`.id,order_date,full_name,payment_method,`order`.`status` FROM `order`';
-$sql2 = 'SELECT sum(total) FROM order_detail GROUP BY id';
+include_once("form-validation.php");
 
-$result = readDatabase($sql, array());
-$result2 = readDatabase($sql2, array());
+$order_id = 0;
 
-$count = 0;
-foreach ($result as $row) {
-    $count++;
-}
+if (isset($_GET["order_id"]))
+    $order_id = test_input($_GET["order_id"]);
 
-for ($i = 0; $i < $count; $i++) {
-    $result[$i][5] = $result2[$i][0];
-}
+$sql = 'SELECT `order`.id,order_date,full_name,payment_method,`order`.`status` FROM `order` WHERE id=?';
+$sql2 = 'SELECT sum(total) FROM order_detail WHERE id=?';
+
+$result = readDatabase($sql, array($order_id));
+$result2 = readDatabase($sql2, array($order_id));
+
+$result[0][5] = $result2[0][0];
 
 foreach ($result as $order) {
     echo '<tr onclick="window.location=' . "'" . '../view/dashboard-order-detail.php?order_id=' . $order[0] . "'" . ';">
