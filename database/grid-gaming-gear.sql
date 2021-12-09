@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 23, 2021 lúc 03:51 AM
+-- Thời gian đã tạo: Th12 09, 2021 lúc 11:06 AM
 -- Phiên bản máy phục vụ: 5.7.14
--- Phiên bản PHP: 7.4.15
+-- Phiên bản PHP: 7.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -145,35 +145,34 @@ CREATE TABLE IF NOT EXISTS `order` (
   `status` int(11) NOT NULL,
   `payment_method` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `order`
 --
 
 INSERT INTO `order` (`id`, `order_date`, `customer_id`, `full_name`, `address`, `email`, `phone`, `status`, `payment_method`) VALUES
-(11, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(12, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(13, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(14, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(15, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(16, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(17, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
-(18, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
+(11, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, 'OB'),
+(12, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 2, 'OB'),
+(13, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 2, 'OB'),
+(14, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, 'COD'),
+(15, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, 'COD'),
+(16, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 3, 'COD'),
+(17, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 3, ''),
+(18, '2021-01-09', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 3, ''),
 (19, '2021-01-10', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
 (20, '2021-01-12', 11, 'Admin', 'abc', 'admin@gmail.com', '123456789', 1, ''),
 (21, '2021-01-13', 8, 'nguyen duy 123', '12231', 'duy@gmail.com', '3123123', 1, ''),
-(22, '2021-01-13', 8, 'nguyen duy 123', '12231', 'duy@gmail.com', '3123123', 1, ''),
-(23, '2021-01-13', 0, 'Nguyen Duy', 'UIT', 'hoangduy791999@gmail.com', '1203802199', 1, ''),
+(22, '2021-01-13', 8, 'nguyen duy 123', '12231', 'duy@gmail.com', '3123123', 4, ''),
+(23, '2021-01-13', 0, 'Nguyen Duy', 'UIT', 'hoangduy791999@gmail.com', '1203802199', 4, ''),
 (24, '2021-01-13', 8, 'nguyen duy 123456', '12231', 'duy@gmail.com', '3123123', 1, ''),
-(25, '2021-01-13', 8, 'nguyen duy 123456', '12231', 'duy@gmail.com', '3123123', 1, ''),
+(25, '2021-01-13', 8, 'nguyen duy 123456', '12231', 'duy@gmail.com', '3123123', 4, ''),
 (26, '2021-01-13', 0, 'Nguyen Duy', 'UIT', 'hoangduy791999@gmail.com', '1203802199', 1, ''),
-(27, '2021-11-03', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, 'COD'),
-(28, '2021-11-03', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, 'OB'),
 (29, '2021-11-03', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0'),
 (30, '2021-11-03', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0'),
 (31, '2021-11-04', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0'),
-(32, '2021-11-04', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0');
+(32, '2021-11-04', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0'),
+(33, '2021-12-02', 16, 'Nguyễn Hoàng Duy', 'UIT 123', 'hoangduy791999@gmal.com', '555 666', 1, '0');
 
 -- --------------------------------------------------------
 
@@ -229,7 +228,11 @@ INSERT INTO `order_detail` (`id`, `product_id`, `quantity`, `price`, `total`) VA
 (30, 36, 1, 18990000, 18990000),
 (31, 5, 2, 1350000, 2700000),
 (31, 7, 1, 2750000, 2750000),
-(32, 4, 2, 1350000, 2700000);
+(32, 4, 2, 1350000, 2700000),
+(33, 6, 2, 1390000, 2780000),
+(33, 32, 1, 6990000, 6990000),
+(33, 14, 1, 590000, 590000),
+(33, 7, 1, 2750000, 2750000);
 
 -- --------------------------------------------------------
 
@@ -251,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `description_5` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `sao` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `product`
@@ -293,7 +296,8 @@ INSERT INTO `product` (`id`, `category_id`, `name`, `price`, `image`, `descripti
 (33, 4, 'Ghế Nitro Concepts Radiant White (S300EX-WB)', 6990000, 'Nitro Concepts Radiant White.jpg', 'Nhà sản xuất : Nitro Concepts', 'Tình trạng : Mới 100%', 'Bảo hành : 24 tháng', '', '', '&#9733; &#9733; &#9733; &#9733; &#9733;'),
 (34, 4, 'Ghế Gamer AKRacing Premium Camo', 7450000, 'AKRacing Premium Camo.jpg', 'Nhà sản xuất : AKRacing', 'Tình trạng : Mới 100%', 'Bảo hành : 24 tháng', '', '', '&#9733; &#9733; &#9733; &#9733; &#9733;'),
 (35, 4, 'Ghế Gamer AKRacing Special Series K700T Arctica', 10990000, 'AKRacing Special Series K700T Arctica.jpg', 'Nhà sản xuất : AKRacing', 'Tình trạng : Mới 100%', 'Bảo hành : 24 tháng', '', '', '&#9733; &#9733; &#9733; &#9733; &#9733;'),
-(36, 4, 'Ghế Gaming Noble Chair - Epic Series MERCEDES-AMG Edition', 18990000, 'Noble Chair - Epic Series MERCEDES-AMG Edition.png', 'Nhà sản xuất : Noble Chair', 'Tình trạng : Mới 100%', 'Bảo hành : 24 tháng', '', '', '&#9733; &#9733; &#9733; &#9733; &#9733;');
+(36, 4, 'Ghế Gaming Noble Chair - Epic Series MERCEDES-AMG Edition', 18990000, 'Noble Chair - Epic Series MERCEDES-AMG Edition.png', 'Nhà sản xuất : Noble Chair', 'Tình trạng : Mới 100%', 'Bảo hành : 24 tháng', '', '', '&#9733; &#9733; &#9733; &#9733; &#9733;'),
+(48, 1, 'bbbbb', 21312414, 'dun.jpg', 'aaaa', 'sdfsdfg', 'sdgfg', 'dfg', 'dfgfd', NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
