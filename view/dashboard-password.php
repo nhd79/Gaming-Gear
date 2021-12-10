@@ -34,16 +34,16 @@
                         <input type="text" name="old-password" id="old-password" required />
                     </div>
                     <div>
-                        <label for="old-password">Mật khẩu mới:</label>
+                        <label for="new-password">Mật khẩu mới:</label>
                     </div>
                     <div>
-                        <input type="text" name="old-password" id="old-password" required />
+                        <input type="text" name="new-password" id="old-password" required />
                     </div>
                     <div>
-                        <label for="old-password">Xác nhận mật khẩu:</label>
+                        <label for="confirm-password">Xác nhận mật khẩu:</label>
                     </div>
                     <div>
-                        <input type="text" name="old-password" id="old-password" required />
+                        <input type="text" name="confirm-password" id="old-password" required />
                     </div>
 
                 </form>
