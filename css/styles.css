@@ -301,6 +301,10 @@ nav > a:hover {
 .item-img {
   max-width: 200px;
   max-height: 150px;
+  transition: 0.3s;
+}
+.item-img:hover {
+  transform: scale(1.5, 1.5);
 }
 .item-name {
   font-weight: bold;
