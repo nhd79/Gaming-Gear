@@ -5,6 +5,7 @@ if (isset($_REQUEST["logout"])) {
     echo "<script>location.href = 'index.php';</script>";
 }
 include_once("../model/db.php");
+include_once("../controller/form-validation.php");
 ?>
 
 <!-- Change color -->

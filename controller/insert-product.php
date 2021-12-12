@@ -1,6 +1,4 @@
 <?php
-include_once("form-validation.php");
-
 if (isset($_POST["submit"])) {
 
     $name = test_input($_POST["name"]);
