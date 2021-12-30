@@ -1,7 +1,4 @@
 <div id="top"></div>
-<?php
-include_once('../controller/header-session-login.php');
-?>
 <!-- Header -->
 <header>
     <div class="header-logo">

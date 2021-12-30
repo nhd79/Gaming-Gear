@@ -1,3 +1,6 @@
+<?php
+include_once("../controller/login.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +21,6 @@
 </head>
 
 <body>
-    <?php
-    include_once("../controller/login.php");
-    ?>
     <!-- Login -->
     <div class="login">
         <div class="text">Đăng nhập</div>
