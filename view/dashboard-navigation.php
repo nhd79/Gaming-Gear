@@ -25,13 +25,13 @@ include_once("../controller/form-validation.php");
     <div class="navigation">
         <ul>
             <li>
-                <a href="/">
+                <a href="dashboard.php">
                     <span class="logo"><img src="/images/logo4.png" alt="Website's Logo" height="45" /></span>
                     <span class="title">Gaming Gear</span>
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="dashboard.php">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>

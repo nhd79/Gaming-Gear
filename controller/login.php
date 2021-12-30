@@ -20,8 +20,13 @@ if (isset($_POST["username"])) {
                 $_SESSION["phone"] = $customer["phone"];
                 $_SESSION["address"] = $customer["address"];
                 $_SESSION["image"] = $customer["image"];
-                echo "<script>alert('Đăng nhập thành công!');</script>";
-                echo "<script>location.href = 'index.php';</script>";
+                if ($_SESSION["full_name"] == "admin") {
+                    // echo "<script>location.href = 'dashboard.php';</script>";
+                    header('Location: dashboard.php');
+                } else {
+                    echo "<script>alert('Đăng nhập thành công!');</script>";
+                    echo "<script>location.href = 'index.php';</script>";
+                }
             } else {
                 echo "<script>alert('Sai mật khẩu!');</script>";
             }
