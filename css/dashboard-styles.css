@@ -505,23 +505,28 @@ body {
   padding-bottom: 50px;
   padding-left: 20vw;
 }
-.update-product-grid div {
+.password-change-grid {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  width: 100%;
+  row-gap: 15px;
+  font-size: 17px;
+  padding-bottom: 50px;
+  padding-left: 20vw;
+}
+.update-product-grid div,
+.insert-product-grid div,
+.password-change-grid div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.product-image {
-  grid-column: 1/3;
 }
 .product-image img {
   max-width: 50%;
   max-height: auto;
 }
-.insert-product-grid div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.product-image,
 .header,
 .product-img,
 .submit {
@@ -535,6 +540,7 @@ body {
 }
 .insert-product-grid input,
 .update-product-grid input,
+.password-change-grid input,
 .insert-product-grid select,
 .update-product-grid select {
   border: 1px solid gray;
@@ -553,15 +559,15 @@ body {
   cursor: pointer;
   font-size: 15px;
 }
-.insert-product-grid div:nth-child(2n):not(.product-img) {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 50px;
-}
+.insert-product-grid div:nth-child(2n):not(.product-img),
 .update-product-grid div:nth-child(2n):not(.product-img) {
   display: flex;
   justify-content: flex-start;
   padding-left: 50px;
+}
+.password-change-grid div:nth-child(2n):not(.submit) {
+  display: flex;
+  justify-content: flex-start;
 }
 .img-label {
   color: gray;

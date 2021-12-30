@@ -25,8 +25,8 @@ include_once('../controller/header-session-login.php');
             <?php
             include_once("dashboard-topbar.php");
             ?>
-            <div class="password-change-grid">
-                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                <div class="password-change-grid">
                     <div class="header">
                         <h2>Đổi mật khẩu</h2>
                     </div>
@@ -37,21 +37,27 @@ include_once('../controller/header-session-login.php');
                         <input type="text" name="old-password" id="old-password" required />
                     </div>
                     <div>
-                        <label for="old-password">Mật khẩu mới:</label>
+                        <label for="new-password">Mật khẩu mới:</label>
                     </div>
                     <div>
-                        <input type="text" name="old-password" id="old-password" required />
+                        <input type="text" name="new-password" id="new-password" required />
                     </div>
                     <div>
-                        <label for="old-password">Xác nhận mật khẩu:</label>
+                        <label for="confirm-password">Xác nhận mật khẩu:</label>
                     </div>
                     <div>
-                        <input type="text" name="old-password" id="old-password" required />
+                        <input type="text" name="confirm-password" id="confirm-password" required />
                     </div>
-
-                </form>
-            </div>
-
+                    <div class="submit">
+                        <button type="submit" name="submit" class="order-button">
+                            Đổi mật khẩu
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <?php
+            include_once("../controller/change-password.php");
+            ?>
         </div>
     </div>
     </div>

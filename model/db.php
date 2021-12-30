@@ -1,8 +1,13 @@
 <?php
-$servername = "localhost";
-$dbusername = "root";
-$dbpassword = "";
-$dbname = "grid-gaming-gear";
+// $servername = "localhost";
+// $dbusername = "root";
+// $dbpassword = "";
+// $dbname = "grid-gaming-gear";
+
+$servername = "fdb34.awardspace.net";
+$dbusername = "4015136_gridgg";
+$dbpassword = "3T[lQAHo0sTX7?B_";
+$dbname = "4015136_gridgg";
 
 function readDatabase($sql, $parameter)
 {

@@ -1,6 +1,4 @@
 <?php
-include_once("form-validation.php");
-
 $product_id = 0;
 
 if (isset($_GET["product_id"]))
