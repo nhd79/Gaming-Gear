@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("../controller/login.php");
 ?>
 <!DOCTYPE html>

@@ -14,7 +14,6 @@ if (isset($_POST["username"])) {
     if (count($result) > 0) { // array
         foreach ($result as $customer) {
             if (password_verify($password, $customer["password"])) {
-                session_start();
                 $_SESSION["full_name"] = $customer["full_name"];
                 $_SESSION["id"] = $customer["id"];
                 $_SESSION["email"] = $customer["email"];
