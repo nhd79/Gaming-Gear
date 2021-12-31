@@ -1,5 +1,8 @@
 <?php
 include_once('../controller/header-session-login.php');
+if ($_SESSION["full_name"] != "admin") {
+  header('Location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
