@@ -1,8 +1,13 @@
 <?php
-$servername = "localhost";
-$dbusername = "root";
-$dbpassword = "";
+$servername = "gg-server.mysql.database.azure.com";
+$dbusername = "ggadmin";
+$dbpassword = "u92LfhRWqpVV7fj";
 $dbname = "grid-gaming-gear";
+
+// $servername = "localhost";
+// $dbusername = "root";
+// $dbpassword = "";
+// $dbname = "grid-gaming-gear";
 
 // $servername = "fdb34.awardspace.net";
 // $dbusername = "4015136_gridgg";
