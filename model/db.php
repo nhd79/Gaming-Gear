@@ -19,7 +19,8 @@ function readDatabase($sql, $parameter)
     global $servername, $dbusername, $dbpassword, $dbname;
     $options = array(
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::MYSQL_ATTR_SSL_CA => '\CA-Cert\DigiCertGlobalRootCA.crt.pem'
     );
     try {
         $connection = new PDO('mysql:host=' . $servername . ';dbname=' . $dbname . '', $dbusername, $dbpassword, $options);
