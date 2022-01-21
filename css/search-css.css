@@ -130,7 +130,7 @@
   opacity: 0.5;
   font-weight: bolder;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .search-container {
     top: 81px;
     right: 340px;
@@ -139,6 +139,8 @@
 @media screen and (max-width: 559px) {
   .search-container {
     top: 81px;
+    /* right: 270px; */
+    /* right: 70vw; */
     right: 0;
   }
 }
