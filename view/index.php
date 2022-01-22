@@ -39,12 +39,12 @@ include_once('../controller/header-session-login.php');
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="/images/slide4.jpg" width="100%" loading="lazy" alt="slideshows" />
+      <img src="/images/slide5.jpg" width="100%" loading="lazy" alt="slideshows" />
       <div class="slide-text">Epic Gear</div>
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
     <div class="mySlides fade" style="display: none">
-      <img src="/images/slide4.jpg" width="100%" loading="lazy" alt="slideshows" />
+      <img src="/images/slide6.jpg" width="100%" loading="lazy" alt="slideshows" />
       <div class="slide-text">Epic Gear</div>
       <a class="banner-button" href="product.php">Xem sản phẩm</a>
     </div>
@@ -61,12 +61,12 @@ include_once('../controller/header-session-login.php');
   <script src="/js/slides.js"></script>
   <!-- News -->
   <div class="news-grid" style="position: relative; top: -4px">
-    <div class="news-1">1</div>
-    <div class="news-2">2</div>
-    <div class="news-3">3</div>
-    <div class="news-4">4</div>
-    <div class="news-5">5</div>
-    <div class="news-6">6</div>
+    <div class="news-1"><img src="/images/play.jpg" /></div>
+    <div class="news-2"><img src="/images/cyberpunk-900-506.png" /></div>
+    <div class="news-3"><img src="/images/chuck-fortner-LFVBohYmtgc-unsplash.jpg" /></div>
+    <div class="news-4"><img src="/images/branden-skeli-r4YWfVVwTQ8-unsplash.jpg" /></div>
+    <div class="news-5"><img src="/images/fazly-shah-Ei5d39YRrgY-unsplash.jpg" /></div>
+    <div class="news-6"><img src="/images/press-play.jpg" /></div>
   </div>
   <!-- Category -->
   <div class="category-grid">
