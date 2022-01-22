@@ -4,7 +4,7 @@
 
 > E-commerce Store Site built with PHP, MySQL, HTML, CSS, Javascript. Contain basic features like: Sign up (with hashed password), Regex constraints, Login, User default avatar, Change user's info, Product display, Product categories, Search products, Cart, Checkout, Admin dashboard, Insert, Update, Delete products, Change password.
 
-### 🏠 [Homepage](https://github.com/nhd79/Gaming-Gear#README.md)
+### 🏠 [Homepage](https://github.com/nhd79/Gaming-Gear/blob/master/README.md)
 
 ### ✨ [Demo](http://nhd79.me/)
 
